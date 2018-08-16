@@ -2,7 +2,7 @@
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。
 
-### Spider
+### Spider--Requests
 ##### Zero--ZhihuBAsic:
   * 基础知识解析<br>
   * 爬取淘宝指定商品和价格:requetst||re<br>
