@@ -16,14 +16,15 @@ Python reptile code<br>
 ##### Two--jianshuImg：
   爬取简书交友页面的最近200页的内容和url链接存入到excle表格中，并下载所有的图片，借助百度的api打分并根据分值存入到不同的文件夹中。<br>
 ##### Three--LianjiaHouse:
-  爬取链家网的二手房、租房、小区等三个方面的信息存入到本地excle中。
+  爬取链家网的二手房、租房、小区等三个方面的信息存入到本地excle中。<br>
 ##### Four--Yiduxiaoshuo:
-  爬取易读小说网的真本小说——《极道天魔》
-<hr>
+  爬取易读小说网的真本小说——《极道天魔》<br>
+  
 ### Spider--Selenium
 ##### A--SilumatedLoginZhihu:
-  模拟登录知乎
+  模拟登录知乎<br>
 ##### B-Qzone:
-  模拟登录qq空间，爬取某好友的所有说说内容保存在txt。
+  模拟登录qq空间，爬取某好友的所有说说内容保存在txt。<br>
+  
 ### Scrapy
-Python Scrapy project group！Daily work and project set。
+Python Scrapy project group！Daily work and project set。<br>
