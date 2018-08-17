@@ -41,3 +41,6 @@ Python Scrapy project group！Daily work and project set。<br>
 - [小猪的python学习之旅](https://juejin.im/user/570afb741ea493005de84da3/posts)：python系列文章
 - [python绿色通道](https://mp.weixin.qq.com/s/BUZhmh-3qIe2HCpZrY4Zig)：爬虫系列文章
 - [pyecharts可视化模块文档](http://pyecharts.org/#/)
+- 有趣的网站
+   * [聚投诉](http://ts.21cn.com/merchant/ranking)
+   * [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)： 我想把图片采集下来，并按照文件夹归类
