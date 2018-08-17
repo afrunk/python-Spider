@@ -19,5 +19,11 @@ Python reptile code<br>
   爬取链家网的二手房、租房、小区等三个方面的信息存入到本地excle中。
 ##### Four--Yiduxiaoshuo:
   爬取易读小说网的真本小说——《极道天魔》
+<hr>
+### Spider--Selenium
+##### A--SilumatedLoginZhihu:
+  模拟登录知乎
+##### B-Qzone:
+  模拟登录qq空间，爬取某好友的所有说说内容保存在txt。
 ### Scrapy
 Python Scrapy project group！Daily work and project set。
