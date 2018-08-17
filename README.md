@@ -1,7 +1,7 @@
 # Python
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。
-[md语法教程](https://www.jianshu.com/p/86e7fa33de8e)<hr>
+[md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
 
 ## Spider--Requests
 ##### Zero--ZhihuBAsic:
@@ -21,7 +21,7 @@ Python reptile code<br>
 ##### Four--Yiduxiaoshuo:
   爬取易读小说网的真本小说——《极道天魔》<br>
 ##### [Six--WZLY](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Six--WZLY/WZLY.md):
-  爬取我主良缘网的信息和图片并进行可视化分析<hr>
+  爬取我主良缘网的信息和图片并进行可视化分析
 
 ## Spider--Selenium
 ##### A--SilumatedLoginZhihu:
@@ -31,10 +31,10 @@ Python reptile code<br>
 ##### C--Weibo
   模拟登录微博，爬取某指定好友的所有微博内容存在txt并制作词云。<br>
 ##### [D--JD](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)
-  爬取京东图书评论，动态难破解直接使用此方法。<br><hr>
+  爬取京东图书评论，动态难破解直接使用此方法。<br>
 
 ## Scrapy
-Python Scrapy project group！Daily work and project set。<br><hr>
+Python Scrapy project group！Daily work and project set。<br>
 
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
