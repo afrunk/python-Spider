@@ -32,3 +32,5 @@ Python reptile code<br>
   爬取京东图书评论，动态难破解直接使用此方法。<br>
 ### Scrapy
 Python Scrapy project group！Daily work and project set。<br>
+### 其他
+- [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
