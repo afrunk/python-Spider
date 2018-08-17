@@ -23,8 +23,9 @@ Python reptile code<br>
 ### Spider--Selenium
 ##### A--SilumatedLoginZhihu:
   模拟登录知乎<br>
-##### B-Qzone:
-  模拟登录qq空间，爬取某好友的所有说说内容保存在txt。<br>
-  
+##### B--Qzone:
+  模拟登录qq空间，爬取某好友的所有说说内容保存在txt并制作词云。<br>
+##### C--Weibo
+  模拟登录微博，爬取某指定好友的所有微博内容存在txt并制作词云。<br>
 ### Scrapy
 Python Scrapy project group！Daily work and project set。<br>
