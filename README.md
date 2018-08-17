@@ -15,5 +15,9 @@ Python reptile code<br>
   爬取猫眼短评——《我不是药神》,通过猫眼电影的api获取到json文件，通过对json文件的解析得到文本。<br>
 ##### Two--jianshuImg：
   爬取简书交友页面的最近200页的内容和url链接存入到excle表格中，并下载所有的图片，借助百度的api打分并根据分值存入到不同的文件夹中。<br>
+##### Three--LianjiaHouse:
+  爬取链家网的二手房、租房、小区等三个方面的信息存入到本地excle中。
+##### Four--Yiduxiaoshuo:
+  爬取易读小说网的真本小说——《极道天魔》
 ### Scrapy
 Python Scrapy project group！Daily work and project set。
