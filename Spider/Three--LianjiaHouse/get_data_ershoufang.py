@@ -16,6 +16,7 @@ def get_page():
     ws.write(0, 4, '方位')
     ws.write(0, 5, '修饰')
     ws.write(0,6,'面积数字')
+    ws.write(0,7,'状态')
     # city=['jn','cs','sh','bj','cd','sz','cq','lf','nj','sy','xa','zz','zh','dl','fs','hf','xm','hk']#济南 长沙 上海 北京 成都  深圳 重庆 廊坊 南京 沈阳 西安 郑州  珠海 大连 佛山  合肥 厦门 海口
     # for i in range(3,18):
     #     print('这是%s'%city[i])
@@ -26,8 +27,8 @@ def get_page():
     for c in range(1,2):
         # url_page='https://m.lianjia.com/'+str(city[c])+'/zufang/pg'
         try:
-            for k in range(0,100):
-                url='https://m.lianjia.com/cs/zufang/pg'+str(k)+'/?_t=1'#一页23户 13468 585
+            for k in range(1,100):
+                url='https://m.lianjia.com/cs/ershoufang/pg'+str(k)+'/?_t=1'#第一页23户后面每一页30户 13468 585
                 print(url)
                 res=requests.get(url,headers=headers,timeout=5).text
                 # print(res)
@@ -36,13 +37,21 @@ def get_page():
                     wheres=html.find_all('div','item_other text_cut')
                     whichs=html.find_all('div','item_minor')
                     hows=html.find_all('div','item_main')
+                    tags=html.find_all('div','tag_box')
+                    #因为除了第一页后面的所有页面中一页就有30个子页面 而每一个子板块的内容标签都是一致的 我们使用find_all获得一个列表内容 然后通过列表的形式输出
                     # print(hows)
                     # print(whichs)
                     # print(wheres)
                     for i in range(len(wheres)):
+                        list=''
                         xiushi = hows[i].text#修饰
                         jiage=(whichs[i].text).split('元')[0]#价格 筛去了\月
                         list=(wheres[i].text).split('/')
+                        tag=tags[i].find_all('span')
+                        for i in range(len(tag)):
+                            # print(tag[i].text)#地铁 满五年 随时看房 有电梯
+                            list.append(tag[i].text)
+                        print(list)
                         print(xiushi)
                         print(jiage)
                         for i in range(4):
@@ -57,8 +66,9 @@ def get_page():
                         ws.write(j, 4, list[2])
                         ws.write(j, 5, xiushi)
                         ws.write(j, 6, shuzi)
+                        ws.write(j, 7, list)
                         j=j+1
-                    wb.save('链家网租房-长沙.xls')
+                    wb.save('链家网二手房-长沙.xls')
                     rtime=float(random.randint(1,100)/20)
                     print("请让我休息%d秒钟"%rtime)
                     print("接下来将要爬取长沙第%d页"%(k+1))
