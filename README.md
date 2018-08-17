@@ -1,7 +1,7 @@
 # Python
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。
-
+[md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
 ### Spider--Requests
 ##### Zero--ZhihuBAsic:
   * 基础知识解析<br>
