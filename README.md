@@ -14,7 +14,7 @@ Python reptile code<br>
    * [x] BeautifulSoup4：更简单的分析页面
    * [x] xlwt：将数据存入到csv
    * [ ] xpath:分析页面内容
-   * [ ] pyechart：数据可视化
+   * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/DataVisualization.md)
    * [ ] pandas：数据可视化
 - 存储：
    * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
