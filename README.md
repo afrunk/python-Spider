@@ -11,11 +11,11 @@ Python reptile code<br>
    * Cookie的作用、模拟登录如何才能够让人分别不出来
 - 第三方库：
    * [x] requests：让HTTP为人类服务。
-   * [×] BeautifulSoup4：更简单的分析页面
+   * [x] BeautifulSoup4：更简单的分析页面
    * [x] xlwt：将数据存入到csv
-   * [] xpath:分析页面内容
-   * [] pyechart：数据可视化
-   * [] pandas：数据可视化
+   * [ ] xpath:分析页面内容
+   * [ ] pyechart：数据可视化
+   * [ ] pandas：数据可视化
 - 存储：
    * [x] 本地保存：txt、excle、csv
    * [ ] 数据库存储：mongodb、mysql
