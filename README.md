@@ -73,3 +73,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - 有趣的网站
    * [聚投诉](http://ts.21cn.com/merchant/ranking)
    * [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)： 我想把图片采集下来，并按照文件夹归类
+   * 关注某人微博如果有更新的话就将更新内容爬取下来并发送邮件
