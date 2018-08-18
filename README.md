@@ -10,7 +10,7 @@ Python reptile code<br>
    * GTE\POST方法获取服务器请求获取网页
    * Cookie的作用、模拟登录如何才能够让人分别不出来
 - 第三方库：
-   * [×]requests：让HTTP为人类服务。
+   * [x]requests：让HTTP为人类服务。
    * [×]BeautifulSoup4：更简单的分析页面
    * [x]xlwt：将数据存入到csv
    * []xpath:分析页面内容
