@@ -48,7 +48,8 @@ Python reptile code<br>
   爬取易读小说网的真本小说——《极道天魔》<br>
 ##### [Six--WZLY](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Six--WZLY/%E6%88%91%E6%9C%AC%E5%8F%AF%E4%BB%A5%E5%BF%8D%E5%8F%97%E9%BB%91%E6%9A%97.md):
   爬取我主良缘网的信息和图片并进行可视化分析
-
+##### [Senev--govcn](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Sever-Govcn/%E6%A2%A6%E6%83%B3%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF.md)
+  爬取文本进行分词和词云
 ## Spider--Selenium
 ##### A--SilumatedLoginZhihu:
   模拟登录知乎<br>
