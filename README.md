@@ -20,7 +20,7 @@ Python reptile code<br>
   爬取链家网的二手房、租房、小区等三个方面的信息存入到本地excle中。<br>
 ##### Four--Yiduxiaoshuo:
   爬取易读小说网的真本小说——《极道天魔》<br>
-##### [Six--WZLY](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Six--WZLY/WZLY.md):
+##### [Six--WZLY](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Six--WZLY/%E6%88%91%E6%9C%AC%E5%8F%AF%E4%BB%A5%E5%BF%8D%E5%8F%97%E9%BB%91%E6%9A%97.md):
   爬取我主良缘网的信息和图片并进行可视化分析
 
 ## Spider--Selenium
