@@ -1,6 +1,7 @@
 # Python
 Python reptile code<br>
-晴空一鹤排云上，便引诗情到碧霄。
+晴空一鹤排云上，便引诗情到碧霄。<br>
+[技术性思考](https://github.com/afrunk/Summer-for-Learing/blob/master/TechnicalThinking.md)<br>
 [md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
 ## 技术点
 - 网页知识：
