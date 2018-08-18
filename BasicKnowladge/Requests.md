@@ -1,10 +1,10 @@
-requests
+# requests
 python最为常用的http请求库。Requests是用python语言编写，基于urllib，采用Apache2 Licensed开源协议的HTTP库。
-0.安装：
+## 0.安装：
 通过pip安装：
 pip install requests
 或者通过pycharm安装：直接在setting中找到当前环境，选择+号输入requests选择install即可安装。
-1.响应和编码：
+## 1.响应和编码：
 import requests
 url='http://www.baidu.com'
 r=requests.get(url)
@@ -69,12 +69,12 @@ if r.status_code == requests.codes.ok:
 else:
     r.raise_for_status()
 使用上述的方法可以避免被反扒之后报错，千篇一律的使用try\except的方法来避免报错真的是有点不好意思。
-2.Get方法：
+## 2.Get方法：
 payload={'page':'1','per_page':'10'}
 r=requests.get('http://httpbin.org/get',params=payload)
 print(r.url)
 get方法本来是直接拿来请求页面内容的，但是有些情况下，url会带参数，我们可以使用合并字符串的方法来构造url，不过requests提供了params关键字参数允许我们以一个字典来提供这些参数。需要注意的是字典里值为None的键不会被添加到url的查询字符串中。
-3.POST方法：
+## 3.POST方法：
 使用requests发送POST请求也很简单，如下：
 import requests
 r=requests.post("http://ttpbin.org/post")
@@ -89,7 +89,7 @@ r=requests.post("http://httpbin.org/post",data=json.dumps(payload))
 当时看康康找出来这样的写法还一脸蒙蔽，自己寻找文章的关键词都不知道，现在想起来也确实汗颜。不过，再回头看那个大牛其实也就这样吧。大家都在进步，这样的话自然而然很多东西就可以很清晰的看到了。当时康康写出来三种写法，确实是上面这种也被我采用了，看极客学院的文档发现还有一种方法应该也很简单。这种做法和上面的做法是等价的而且不需要导入json库，数据在发出时会被自动编码。
 payload={'page':1,'per_page':10}
 r=requests.post("http://httpbin.org/post",json=payload)
-4.请求头headers处理：
+## 4.请求头headers处理：
 import requests
 header = {
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
@@ -98,7 +98,7 @@ url = 'https://github.com/afrunk'
 r = requests.get(url,headers=header)
 print(r.content)
 我们可以通过print(r.request.headers)来输出我们发送到服务器的请求的头部。服务器返回给我们的头部信息可以通过r.headers访问。
-5.HTTP响应：
+## 5.HTTP响应：
 • 普通响应：使用r.text获取，基本上可以读取大部分的网页数据，但是会存在部分的问题,所以需要使用到之前我们所说的方法。
 import requests
 
@@ -123,7 +123,7 @@ image_data = r.content   # 获取二进制数据
 with open('/Users/Ethan/Downloads/redux.png', 'wb') as fout:
     fout.write(image_data)
 • 原始响应：使用r.raw获取,暂时没有碰到这样的情况，需要之后可以再来补充下吧。
-6.重定向与超时设置：
+## 6.重定向与超时设置：
 默认情况下，除了HEAD，requestst会自动处理所有重定向，我们可以使用响应的history属性来追踪重定向。如，我们访问下面的链接：https://toutiao.io/k/c32y51，被重定向到了下面的链接：http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io。
 import requests
 headers={
@@ -147,21 +147,21 @@ print(r.text)
 超时： 可以告诉 requests 在经过以 timeout 参数设定的秒数时间之后停止等待响应。
 连接超时指的是在你的客户端实现到远端机器端口的连接时Request 会等待的秒数。一个很好的实践方法是把连接超时设为比 3 的倍数略大的一个数值，因为 TCP 数据包重传窗口 (TCP packet retransmission window) 的默认大小是 3
 r = requests.get('https://github.com', timeout=5)
-7.Cookie：
+## 7.Cookie：
 官方文档写的不是很好，一般情况下cookie都是放在headers中实现的。（可能是我的浅薄无知导致 的这样的理所当然的想法。）
 >>> url = 'http://httpbin.org/cookies'
 >>> cookies = dict(cookies_are='working')
 >>> r = requests.get(url, cookies=cookies)
 >>> r.text
 '{"cookies": {"cookies_are": "working"}}'
-8.会话对象：
+## 8.会话对象：
 会话对象让你能够跨请求保持某些参数。 它也会在同一个 Session 实例发出的所有请求之间保持 cookie， 期间使用 urllib3 的 connection pooling 功能。所以如果你向同一主机发送多个请求，底层的 TCP 连接将会被重用，从而带来显著的性能提升。
 s = requests.Session()
 s.get('http://httpbin.org/cookies/set/sessioncookie/123456789')
 r = s.get("http://httpbin.org/cookies")
 print(r.text)
 # '{"cookies": {"sessioncookie": "123456789"}}'
-9.代理：
+## 9.代理：
 如果需要使用代理，你可以通过为任意请求方法提供 proxies 参数来配置单个请求:
 import requests
 proxies = {
@@ -169,12 +169,12 @@ proxies = {
   "https": "http://10.10.1.10:1080",
 }
 requests.get("http://example.org", proxies=proxies)
-10.身份验证：
+## 10.身份验证：
 这个暂时没有概念。
-参考文档：
+## 参考文档：
 1. python绿色通道的爬虫系列文章
 2. requests的极客学院的文档
 3. requests官方文档
-参考文章：
+## 参考文章：
 	1. requests的中文乱码问题
 
