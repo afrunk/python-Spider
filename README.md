@@ -10,18 +10,18 @@ Python reptile code<br>
    * GTE\POST方法获取服务器请求获取网页
    * Cookie的作用、模拟登录如何才能够让人分别不出来
 - 第三方库：
-   * [x]requests：让HTTP为人类服务。
-   * [×]BeautifulSoup4：更简单的分析页面
-   * [x]xlwt：将数据存入到csv
-   * []xpath:分析页面内容
-   * []pyechart：数据可视化
-   * []pandas：数据可视化
+   * [x] requests：让HTTP为人类服务。
+   * [×] BeautifulSoup4：更简单的分析页面
+   * [x] xlwt：将数据存入到csv
+   * [] xpath:分析页面内容
+   * [] pyechart：数据可视化
+   * [] pandas：数据可视化
 - 存储：
-   * [x]本地保存：txt、excle、csv
-   * [ ]数据库存储：mongodb、mysql
+   * [x] 本地保存：txt、excle、csv
+   * [ ] 数据库存储：mongodb、mysql
 - 爬虫框架：
-   * [ ]Scrapy
-   * [ ]PySpider
+   * [ ] Scrapy
+   * [ ] PySpider
 - 反爬虫：
    * 动态加载
    * js加密
