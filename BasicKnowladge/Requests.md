@@ -1,9 +1,9 @@
 # requests
 python最为常用的http请求库,Requests是用python语言编写,基于urllib，采用Apache2 Licensed开源协议的HTTP库。
 ### 0.安装：
-通过pip安装：
-pip install requests
-或者通过pycharm安装：直接在setting中找到当前环境，选择+号输入requests选择install即可安装。
+通过pip安装：<br>
+pip install requests<br>
+或者通过pycharm安装：直接在setting中找到当前环境，选择+号输入requests选择install即可安装。<br>
 ### 1.响应和编码：
 ```python
 import requests
@@ -26,8 +26,8 @@ print(r.content)
 得到：
 一个二进制的html页面（中间的文本全部是二进制的文本。）
 ```
-响应什么的都很简单，问题是requests使用之后总是会碰到乱码问题。
-如何解决Requsts中文乱码问题？
+响应什么的都很简单，问题是requests使用之后总是会碰到乱码问题。<br>
+如何解决Requsts中文乱码问题？<br>
 方法一：使用r.content，得到的是bytes，再转为str。
 ```python
 import requests
@@ -179,9 +179,11 @@ print(r.url)
 print(r.history)
 print(r.text)
 ```
-超时： 可以告诉 requests 在经过以 timeout 参数设定的秒数时间之后停止等待响应。
+超时： 可以告诉 requests 在经过以 timeout 参数设定的秒数时间之后停止等待响应。<br>
 连接超时指的是在你的客户端实现到远端机器端口的连接时Request 会等待的秒数。一个很好的实践方法是把连接超时设为比 3 的倍数略大的一个数值，因为 TCP 数据包重传窗口 (TCP packet retransmission window) 的默认大小是 3
+```python
 r = requests.get('https://github.com', timeout=5)
+```
 ### 7.Cookie：
 官方文档写的不是很好，一般情况下cookie都是放在headers中实现的。（可能是我的浅薄无知导致 的这样的理所当然的想法。）
 ```python
