@@ -2,7 +2,33 @@
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。
 [md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
-
+## 技术点
+- 网页知识：
+   * CSS\HTML:分析DOM提取网页内容
+   * JS:网页的加密解密、json加载等等
+- HTTP:
+   * GTE\POST方法获取服务器请求获取网页
+   * Cookie的作用、模拟登录如何才能够让人分别不出来
+- 第三方库：
+   * [x]requests：让HTTP为人类服务。
+   * [x]BeautifulSoup4：更简单的分析页面
+   * [x]xlwt：将数据存入到csv
+   * []xpath:分析页面内容
+   * []pyechart：数据可视化
+   * []pandas：数据可视化
+- 存储：
+   * [x]本地保存：txt、excle、csv
+   * []数据库存储：mongodb、mysql
+- 爬虫框架：
+   * []Scrapy
+   * []PySpider
+- 反爬虫：
+   * 动态加载
+   * js加密
+   * 限制时间和提交请求次数
+   * 多重加密
+   * 登陆获取
+- 分布式爬虫
 ## Spider--Requests
 ##### Zero--ZhihuBAsic:
   * 基础知识解析<br>
