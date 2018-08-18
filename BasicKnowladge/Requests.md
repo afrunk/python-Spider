@@ -1,5 +1,5 @@
 # requests
-python最为常用的http请求库。Requests是用python语言编写，基于urllib，采用Apache2 Licensed开源协议的HTTP库。
+python最为常用的http请求库,Requests是用python语言编写,基于urllib，采用Apache2 Licensed开源协议的HTTP库。
 ### 0.安装：
 通过pip安装：
 pip install requests
@@ -133,6 +133,7 @@ print r.text
 print r.encoding
 ```
 • JSON响应：使用r.json()获取，一般情况下，这种数据很少见，一般情况下存在json文件中的数据也是字典格式的文本。
+```python
 import requests
 
 r = requests.get("https://github.com/timeline.json")
@@ -140,7 +141,9 @@ r = requests.get("https://github.com/timeline.json")
 if r.status_code == 200:
     print r.headers.get('content-type')
     print r.json()
+```
 • 二进制响应：使用r.content获取，我们需要将图片写入到本地的时候，一般先获取到图片的二进制数据，然后写入到本地。
+```python
 import requests
 
 url = 'https://github.com/reactjs/redux/blob/master/logo/logo.png?raw=true'
@@ -149,6 +152,7 @@ image_data = r.content   # 获取二进制数据
 
 with open('/Users/Ethan/Downloads/redux.png', 'wb') as fout:
     fout.write(image_data)
+```
 • 原始响应：使用r.raw获取,暂时没有碰到这样的情况，需要之后可以再来补充下吧。
 ### 6.重定向与超时设置：
 默认情况下，除了HEAD，requestst会自动处理所有重定向，我们可以使用响应的history属性来追踪重定向。如，我们访问下面的链接：https://toutiao.io/k/c32y51，被重定向到了下面的链接：http://www.jianshu.com/p/490441391db6?hmsr=toutiao.io。
@@ -211,5 +215,5 @@ requests.get("http://example.org", proxies=proxies)
 2. [requests的极客学院的文档](http://wiki.jikexueyuan.com/project/explore-python/HTTP/Requests.html)
 3. [requests官方文档](http://docs.python-requests.org/zh_CN/latest/)
 ### 参考文章：
-	1. [requests的中文乱码问题](https://blog.csdn.net/chaowanghn/article/details/54889835)
+1. [requests的中文乱码问题](https://blog.csdn.net/chaowanghn/article/details/54889835)
 
