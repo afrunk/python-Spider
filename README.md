@@ -72,6 +72,7 @@ Python Scrapy project group！Daily work and project set。<br>
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
 - [Jack Cui](http://cuijiahua.com/blog/2018/03/spider-5.html)：python系列文章
+  * [python3网络爬虫入门](https://blog.csdn.net/column/details/15321.html)
 - [pyecharts可视化模块文档](http://pyecharts.org/#/)
    * [作者简书教程](https://www.jianshu.com/p/b718c307a61c)：都是静态的可视化。
 - 有趣的网站
