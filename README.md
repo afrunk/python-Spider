@@ -80,3 +80,4 @@ Python Scrapy project group！Daily work and project set。<br>
    * 关注某人微博如果有更新的话就将更新内容爬取下来并发送邮件
 - [廖雪峰python学习笔记](https://blog.csdn.net/u012084802/article/category/7370766)：python基础知识排查
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
+- 爬取公众号文章并且写入到本地的pdf文件中（python绿色通道）
