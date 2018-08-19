@@ -71,7 +71,7 @@ Python Scrapy project group！Daily work and project set。<br>
 [抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
-- [python绿色通道](https://mp.weixin.qq.com/s/BUZhmh-3qIe2HCpZrY4Zig)：爬虫系列文章
+- [Jack Cui](http://cuijiahua.com/blog/2018/03/spider-5.html)：python系列文章
 - [pyecharts可视化模块文档](http://pyecharts.org/#/)
    * [作者简书教程](https://www.jianshu.com/p/b718c307a61c)：都是静态的可视化。
 - 有趣的网站
