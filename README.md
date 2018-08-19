@@ -53,6 +53,8 @@ Python reptile code<br>
   爬取政府工作报告文本进行分词和词云  `jieba`  `wordcloud` `可视化`
 ##### [Eight--DemographicVisualization](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)
   爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`
+#####  [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)
+  批量盗图
 ## Spider--Selenium
 ##### A--SilumatedLoginZhihu:
   模拟登录知乎<br>
@@ -73,7 +75,6 @@ Python Scrapy project group！Daily work and project set。<br>
    * [作者简书教程](https://www.jianshu.com/p/b718c307a61c)：都是静态的可视化。
 - 有趣的网站
    * [聚投诉](http://ts.21cn.com/merchant/ranking)
-   * [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)： 我想把图片采集下来，并按照文件夹归类
    * 关注某人微博如果有更新的话就将更新内容爬取下来并发送邮件
 - [廖雪峰python学习笔记](https://blog.csdn.net/u012084802/article/category/7370766)：python基础知识排查
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
