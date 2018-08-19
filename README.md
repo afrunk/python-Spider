@@ -81,3 +81,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [廖雪峰python学习笔记](https://blog.csdn.net/u012084802/article/category/7370766)：python基础知识排查
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
 - 爬取公众号文章并且写入到本地的pdf文件中（python绿色通道）
+- [爬虫合集](https://github.com/bodekjan/awesome-spider)
