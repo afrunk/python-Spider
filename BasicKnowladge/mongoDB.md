@@ -16,6 +16,7 @@ Robomongo可视化工具：https://robomongo.org/download
     bye
     ```
 - 第三步:如何设置自动连接的配置
-    ```C:\Windows\system32>mongod --bind_ip 0.0.0.0 --logpath C:\MongoDB\Server\4.0\data\db\logs\mongo.log --logappend --dbpath C:\MongoDB\Server\4.0\data\db
+    ```
+    C:\Windows\system32>mongod --bind_ip 0.0.0.0 --logpath C:\MongoDB\Server\4.0\data\db\logs\mongo.log --logappend --dbpath C:\MongoDB\Server\4.0\data\db
      --port 27017 --serviceName "MongoDB"  --serviceDisplayName "MongoDB" --install
     ```
