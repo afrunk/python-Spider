@@ -13,7 +13,7 @@ Python reptile code<br>
    * Cookie的作用、模拟登录如何才能够让人分别不出来
 - 第三方库：
    * [x] [requests：让HTTP为人类服务](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/B--Requests.md)。
-   * [x] [Urllib](https://github.com/afrunk/Summer-for-Learing/tree/master/BasicKnowladge)
+   * [x] [Urllib](https://github.com/afrunk/Summer-for-Learing/tree/master/BasicKnowladge):最基本的请求库
    * [x] BeautifulSoup4：更简单的分析页面
    * [ ] xpath:分析页面内容
    * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/D--DataVisualization.md)
