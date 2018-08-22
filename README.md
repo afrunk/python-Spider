@@ -19,7 +19,7 @@ Python reptile code<br>
    * [ ] pandas：数据可视化
 - 存储：
    * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
-   * [ ] 数据库存储：mongodb、mysql
+   * [ ] 数据库存储：[mongodb](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/mongoDB.md)、mysql
 - 爬虫框架：
    * [ ] Scrapy
    * [ ] PySpider
