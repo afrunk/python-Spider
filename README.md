@@ -13,7 +13,6 @@ Python reptile code<br>
 - 第三方库：
    * [x] [requests：让HTTP为人类服务](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/B--Requests.md)。
    * [x] BeautifulSoup4：更简单的分析页面
-   * [x] xlwt：将数据存入到csv
    * [ ] xpath:分析页面内容
    * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/D--DataVisualization.md)
    * [ ] pandas：数据处理
