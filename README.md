@@ -11,16 +11,16 @@ Python reptile code<br>
    * GTE\POST方法获取服务器请求获取网页
    * Cookie的作用、模拟登录如何才能够让人分别不出来
 - 第三方库：
-   * [x] [requests：让HTTP为人类服务](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/Requests.md)。
+   * [x] [requests：让HTTP为人类服务](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/B--Requests.md)。
    * [x] BeautifulSoup4：更简单的分析页面
    * [x] xlwt：将数据存入到csv
    * [ ] xpath:分析页面内容
-   * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/DataVisualization.md)
-   * [ ] pandas：数据可视化
+   * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/D--DataVisualization.md)
+   * [ ] pandas：数据处理
 - 存储：
-   * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
+   * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/A--%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
    * [ ] 数据库存储：
-      - [mongodb](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/mongoDB.md)
+      - [mongodb](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/E--mongoDB.md)
       - mysql
 - 爬虫框架：
    * [ ] Scrapy
