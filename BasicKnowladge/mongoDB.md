@@ -7,11 +7,11 @@ Robomongo可视化工具：https://robomongo.org/download
   >  It looks like you are trying to access MongoDB over HTTP on the native driver port.
 - 第二步：<br>
 返回之前的bin目录，在此文件夹下打开命令行输入：mongo,会直接进入mongo的命令行的一个交互页面。在这个页面下进入一个命令的输入就可以实现数据库的操作。
-```
-> db
-test
-> db.test.insert(('a':'b'))
-2018-08-22T11:46:44.029+0800 E QUERY    [js] SyntaxError: missing ) in parenthetical @(shell):1:19
-> ^C
-bye
-```
+    ```
+    > db
+    test
+    > db.test.insert(('a':'b'))
+    2018-08-22T11:46:44.029+0800 E QUERY    [js] SyntaxError: missing ) in parenthetical @(shell):1:19
+    > ^C
+    bye
+    ```
