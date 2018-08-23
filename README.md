@@ -2,7 +2,7 @@
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。<br>
 [技术性思考](https://github.com/afrunk/Summer-for-Learing/blob/master/TechnicalThinking.md)<br>
-[技巧性思考]()
+[技巧性思考]()<br>
 [md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
 >  本库是本人自己学习爬虫的过程中学习所总结的一些东西，APP\Spider--Selenium\Spider\Scrapy等都是各种项目的具体的文件夹，其中大部分都具有解释性的实现md文档，而BasicKnowladeg文件夹内是在学习的过程中所需要掌握和使用的一些第三方库或数据库等等技术记录文章，不仅仅是为自己的未来的实践做一个记录查询，更多的是希望后来人可以更快速和系统的学习爬虫
 ## 技术点
