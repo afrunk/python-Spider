@@ -2,6 +2,7 @@
 Python reptile code<br>
 晴空一鹤排云上，便引诗情到碧霄。<br>
 [技术性思考](https://github.com/afrunk/Summer-for-Learing/blob/master/TechnicalThinking.md)<br>
+[技巧性思考]()
 [md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
 >  本库是本人自己学习爬虫的过程中学习所总结的一些东西，APP\Spider--Selenium\Spider\Scrapy等都是各种项目的具体的文件夹，其中大部分都具有解释性的实现md文档，而BasicKnowladeg文件夹内是在学习的过程中所需要掌握和使用的一些第三方库或数据库等等技术记录文章，不仅仅是为自己的未来的实践做一个记录查询，更多的是希望后来人可以更快速和系统的学习爬虫
 ## 技术点
@@ -74,14 +75,14 @@ Python Scrapy project group！Daily work and project set。<br>
 [抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
-- [Jack Cui](http://cuijiahua.com/blog/2018/03/spider-5.html)：python系列文章
-  * [python3网络爬虫入门](https://blog.csdn.net/column/details/15321.html)
+- [Jack Cui](http://cuijiahua.com/blog/2018/03/spider-5.html)：python系列文章（中级可吸收）
+  * [python3网络爬虫入门](https://blog.csdn.net/column/details/15321.html)(初中级入门实践)
 - [pyecharts可视化模块文档](http://pyecharts.org/#/)
    * [作者简书教程](https://www.jianshu.com/p/b718c307a61c)：都是静态的可视化。
-- 有趣的网站
-   * [聚投诉](http://ts.21cn.com/merchant/ranking)
+- 有趣的网站或点子
+   * [聚投诉](http://ts.21cn.com/merchant/ranking)（有机会可以尝试爬取）
    * 关注某人微博如果有更新的话就将更新内容爬取下来并发送邮件
+   * 爬取公众号文章并且写入到本地的pdf文件中（python绿色通道实现但是未详细分享）
 - [廖雪峰python学习笔记](https://blog.csdn.net/u012084802/article/category/7370766)：python基础知识排查
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
-- 爬取公众号文章并且写入到本地的pdf文件中（python绿色通道）
-- [爬虫合集](https://github.com/bodekjan/awesome-spider)
+- [爬虫合集](https://github.com/bodekjan/awesome-spider)：年久失修
