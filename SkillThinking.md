@@ -24,3 +24,5 @@
 ```
 
 ## 二：技术思考与业务关系
+### 1.Coding随想录
+思考来源博客：[timqi](https://www.timqi.com/2017/12/20/summarize-2017/)<br>
