@@ -14,7 +14,21 @@ except:
 ```
 web.get方法会在页面的onload事件触发时立即返回，也就是说如果页面中有很多的ajax请求的话，web.get方法返回可能页面还没有加载完成。web还提供了一些find_element_by_\*方法方便定位到具体的DOm节点进行后续操作。同时selenium.webdriver.common.keys模块中提供了一些特定的键值来模拟用户输入操作。web.close()\web.quit()提供了关闭浏览器标签和关闭浏览器的方法。
 ## 页面等待：针对加载需要一定时间的页面
-刚刚说道web.get方法会在onload时立即返回，对于大量使用ajax的页面我们可能无法正确获取目标元素，或者一些页面设置了延时加载策略，针对这种情况我们需要设置一个合理的等待策略，而Selenium提供了两种不同的等待策略：显示、隐式。<br>
-显示策略就是自定一个等待时间，如果在指定时间到达时不能顺利获取元素则抛出异常，其本质就是简单的time.sleep，selenium为这种情况封装了更为便捷的语法：
+刚刚说道web.get方法会在onload时立即返回，对于大量使用ajax的页面我们可能无法正确获取目标元素，或者一些页面设置了延时加载策略，针对这种情况我们需要设置一个合理的等待策略，而Selenium提供了两种不同的等待策略：**显示**、**隐式**。<br>
+**显示策略**就是自定一个等待时间，如果在指定时间到达时不能顺利获取元素则抛出异常，其本质就是简单的time.sleep，selenium为这种情况封装了更为便捷的语法：
 ```python
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+driver=webdriver.Chrome()
+driver.get('https://translate.google.cn/#en/zh-CN')
+try:
+    element=WebDriverWait(driver,10)
+finally:
+    driver.quit()
+```
+隐式策略则是设置一个固定的等待时间，如果在这个时间之内找到元素返回，如果到时候仍未找到则抛出异常，这个固定的等待时间对driver全局有效。
+```python
+from selenium import webdriver
+driver = webdriver.Chrome()
+driver.implicitly_wait(10)
 ```
