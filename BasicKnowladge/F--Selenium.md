@@ -202,6 +202,7 @@ driver.close() 关闭当前窗口
 ### 第一步：安装FireFox的katalon Recorder插件
 直接打开扩展中心，然后输入katalon Recorder即可找到插件，安装之后即可。
 ### 第二步：使用FireFox的插件来实现自动化操作
+在FireFox中打开插件，然后点击下图的第一个标志Record，等到当前目标弹到浏览器之后再进入目标网站，需要注意的是这一步必须预先复制好目标网站的url。然后我们在当前网站进行的点击等等一系列操作，都可以看到插件给出的提示，而且在插件的页面也会有不停的添加Command的变化，等到所有的都完成之后点击Stop即可停止，再点击play即可观看浏览器自动化模拟我们之前的操作，这中间的速度都比较快，这些都需要我进一步处理代码的时候尽可能的使其变得像人的操作。如果没有问题，只需要点击Export即可看到代码块，我们只需要复制红色框内的代码和头文件即可。这就是一种最适合新手的傻瓜式的操作。
 ![操作页面](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/imgs/Katalon%20%20Recorder.png)
 ![代码复制页面](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/imgs/Katalon2.png)
 
