@@ -191,6 +191,11 @@ browser.get('https://www.taobao.com')
 time.sleep(1)
 browser.switch_to_window(browser.window_handles[0])
 browser.get('https://python.org')
+
+driver.current_window_handle 获取当前窗口handle
+driver.window_handles 获取所有窗口的handle，返回list列表
+driver.switch_to.window(handle) 切换到对应的窗口
+driver.close() 关闭当前窗口
 ```
 ## 可应用方向
 - 知乎：在selenium中打开这个连接：https://www.zhihu.com/explore 是可以不需要登陆的查看问题和回答，经过一番测试，只需要经过一系列的点击和下拉即可获取到全部内容，不过这样子确实比较繁琐。
