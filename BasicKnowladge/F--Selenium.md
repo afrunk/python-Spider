@@ -174,6 +174,23 @@ actions = ActionChains(browser)
 actions.drag_and_drop(source, target)
 actions.perform()
 ```
+### 3.选项卡操作
+在第一个选项卡打开百度 在第二个选项卡打开淘宝 在返回第一个选项卡打开python官网
+```python
+import time
+from selenium import webdriver
 
+browser = webdriver.Chrome()
+browser.get('https://www.baidu.com')
+# 打开一个选项卡
+browser.execute_script('window.open()')
+print(browser.window_handles)
+# 选择第二个选项卡
+browser.switch_to_window(browser.window_handles[1])
+browser.get('https://www.taobao.com')
+time.sleep(1)
+browser.switch_to_window(browser.window_handles[0])
+browser.get('https://python.org')
+```
 ## 可应用方向
 - 知乎：在selenium中打开这个连接：https://www.zhihu.com/explore 是可以不需要登陆的查看问题和回答，经过一番测试，只需要经过一系列的点击和下拉即可获取到全部内容，不过这样子确实比较繁琐。
