@@ -43,3 +43,49 @@ web.maximize_window()#全屏展示
 web.save_screenshot('1.png')
 ```
 为了获取到特定元素的截图，我们可以先从driver中获取到该元素，然后取得元素的位置信息之后通过图片处理工具截取到，通过这样的方法可以轻松的获取到页面中的验证码、二维码等等一些结构信息便于后续的使用。甚至是可以通过实现动态的一个拉动效果实现拼图验证码的实现通过（这个思路在jack的[博客进阶教程](http://cuijiahua.com/blog/2018/03/spider-5.html)里面有体现）
+### 3.查找单个元素的方法
+```python
+find_element_by_name   通过name查找
+find_element_by_xpath  通过xpath查找
+find_element_by_link_text   通过链接查找
+find_element_by_partial_link_text    通过部分链接查找
+find_element_by_tag_name   通过标签名称查找
+find_element_by_class_name   通过类名查找
+find_element_by_css_selector  通过css选择武器查找
+```
+## 二：元素交互操作
+### 1.在页面中进行内容填写
+百度搜索交互实现并返回搜索结果内容
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+# 创建一个浏览器对象
+browser = webdriver.Chrome()
+try:
+    # 开启一个浏览器并访问https://www.baidu.com
+    browser.get('https://www.baidu.com')
+    # 在打开的网页响应中根据id查找元素   获取到查询框
+    input = browser.find_element_by_id('kw')
+    # 向查询框中输入Python
+    input.send_keys('Python')
+    # 模拟回车
+    input.send_keys(Keys.ENTER)
+    # 显示等待， 等待10秒
+    wait = WebDriverWait(browser, 10)
+    # 显式等待指定某个条件，然后设置最长等待时间。如果在这个时间还没有找到元素，那么便会抛出异常
+    wait.until(EC.presence_of_element_located((By.ID,'content_left')))
+    # 输出当前的url
+    print(browser.current_url)
+    # 输出Cookies
+    print(browser.get_cookies())
+    # 输出页面响应内容
+    print(browser.page_source)
+finally:
+    pass
+    # 关闭浏览器
+    # browser.close()
+```
