@@ -55,7 +55,7 @@ find_element_by_css_selector  通过css选择武器查找
 ```
 ## 二：元素交互操作
 ### 1.在页面中进行内容填写
-百度搜索交互实现并返回搜索结果内容
+**百度搜索交互**实现并返回搜索结果内容
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -88,4 +88,28 @@ finally:
     pass
     # 关闭浏览器
     # browser.close()
+```
+淘宝搜索页面实现内容的搜索和爬取
+```python
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+# 申明一个浏览器对象
+browser = webdriver.Chrome()
+# 使用浏览器访问淘宝
+browser.get('https://www.taobao.com')
+# 根据ID查找元素
+input_search = browser.find_element(By.ID,'q')
+# 模拟输入PSV到输入框
+input_search.send_keys('PSV')
+time.sleep(2)
+# 清空输入
+input_search.clear()
+input_search.send_keys('3DS')
+button = browser.find_element(By.CLASS_NAME,'btn-search')
+#在最后面的搜索栏点击搜索即可
+# 模拟点击
+button.click()
+print(browser.page_source)
 ```
