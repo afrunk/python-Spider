@@ -53,6 +53,50 @@ find_element_by_tag_name   通过标签名称查找
 find_element_by_class_name   通过类名查找
 find_element_by_css_selector  通过css选择武器查找
 ```
+获取元素的各个属性
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# 申明一个浏览器对象
+browser = webdriver.Chrome()
+browser.get('https://www.zhihu.com/explore')
+logo = browser.find_element(By.ID,'zh-top-link-logo')
+# 获取属性
+print(logo.get_attribute('class'))
+#获取文本值
+print(logo.text)
+#获取id
+print(logo.id)
+#获取位置
+print(logo.location)
+#获取标签名称
+print(logo.tag_name)
+#获取大小
+print(logo.size)
+# browser.close()
+```
+### 4.Frame元素的切换
+```python
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
+
+browser = webdriver.Chrome()
+url = 'http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable'
+browser.get(url)
+# 将操作的响应数据换成iframeResult
+browser.switch_to.frame('iframeResult')
+source = browser.find_element_by_css_selector('#draggable')
+print(source)
+try:
+    logo = browser.find_element_by_class_name('logo')
+except NoSuchElementException:
+    print('NO LOGO')
+# 切换成父元素
+browser.switch_to.parent_frame()
+logo = browser.find_element_by_class_name('logo')
+print(logo)
+print(logo.text)
+```
 ## 二：元素交互操作
 ### 1.在页面中进行内容填写
 **百度搜索交互**实现并返回搜索结果内容
