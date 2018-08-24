@@ -19,6 +19,7 @@ Python reptile code<br>
    * [ ] xpath:分析页面内容
    * [ ] [pyechart：数据可视化](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/D--DataVisualization.md)
    * [ ] pandas：数据处理
+   * [x] [selenium](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/F--Selenium.md):处理动态交页面数据
 - 存储：
    * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/A--%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
    * [ ] 数据库存储：
