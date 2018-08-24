@@ -89,7 +89,7 @@ finally:
     # 关闭浏览器
     # browser.close()
 ```
-淘宝搜索页面实现内容的搜索和爬取
+**淘宝搜索页面**实现内容的搜索和爬取
 ```python
 import time
 from selenium import webdriver
@@ -113,3 +113,23 @@ button = browser.find_element(By.CLASS_NAME,'btn-search')
 button.click()
 print(browser.page_source)
 ```
+### 2.实现内容拖拽效果
+`菜鸟编程`html拖拽效果实现
+```python
+from selenium import webdriver
+from selenium.webdriver import ActionChains
+
+browser = webdriver.Chrome()
+url = 'http://www.runoob.com/try/try.php?filename=jqueryui-api-droppable'
+browser.get(url)
+# 切换id为iframeResult的frame
+browser.switch_to.frame('iframeResult')
+source = browser.find_element_by_css_selector('#draggable')
+target = browser.find_element_by_css_selector('#droppable')
+actions = ActionChains(browser)
+actions.drag_and_drop(source, target)
+actions.perform()
+```
+
+## 可应用方向
+- 知乎：在selenium中打开这个连接：ttps://www.zhihu.com/explore是可以不需要登陆的查看问题和回答，经过一番测试，只需要经过一系列的点击和下拉即可获取到全部内容，不过这样子确实比较繁琐。
