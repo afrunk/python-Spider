@@ -223,6 +223,8 @@ driver.window_handles 获取所有窗口的handle，返回list列表
 driver.switch_to.window(handle) 切换到对应的窗口
 driver.close() 关闭当前窗口
 ```
+### 4.文件上传
+`driver.find_element_by_name("file").send_keys('D:\\upload_file.txt')`
 ## 三：katalon Recorder傻瓜式操作
 这个在[莫烦的教学视频](https://morvanzhou.github.io/)里面有，虽然是在一个公众号里面看到的方法，但是之前也是没有上心的，今天发现，我的天，怎么这么好用。可以很简单迅速的实现selenium的python程序代码输出实现一个页面的操作，但是仅仅限制在一个页面。<br>
 ### 第一步：安装FireFox的katalon Recorder插件
