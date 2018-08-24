@@ -197,5 +197,12 @@ driver.window_handles 获取所有窗口的handle，返回list列表
 driver.switch_to.window(handle) 切换到对应的窗口
 driver.close() 关闭当前窗口
 ```
+## 三：katalon Recorder傻瓜式操作
+这个在[莫烦的教学视频](https://morvanzhou.github.io/)里面有，虽然是在一个公众号里面看到的方法，但是之前也是没有上心的，今天发现，我的天，怎么这么好用。可以很简单迅速的实现selenium的python程序代码输出实现一个页面的操作，但是仅仅限制在一个页面。<br>
+### 第一步：安装FireFox的katalon Recorder插件
+直接打开扩展中心，然后输入katalon Recorder即可找到插件，安装之后即可。
+### 第二步：使用FireFox的插件来实现自动化操作
+
+
 ## 可应用方向
 - 知乎：在selenium中打开这个连接：https://www.zhihu.com/explore 是可以不需要登陆的查看问题和回答，经过一番测试，只需要经过一系列的点击和下拉即可获取到全部内容，不过这样子确实比较繁琐。
