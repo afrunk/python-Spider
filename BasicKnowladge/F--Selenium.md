@@ -1,6 +1,32 @@
 # Selenium
 [selenium-DOC](https://selenium-python.readthedocs.io/getting-started.html)<br>
 Selenium是模拟测试工具，在开发基于Selenium的Task时应该遵循模拟用户的操作这一原则。比如在抓取网络数据时，通常的思路是通过嗅探headers字段，构造http请求并解析返回结果，但是在selenium中需要模拟的是用户的输入、下滑、翻页等操作，然后通过driver的page_source拿到网页源码然后解析。
+## 零：浏览器操作
+### 1.控制浏览器
+```python
+#设置浏览器宽480高800显示
+driver.set_window_size(480, 800)
+#刷新当前页面
+driver.refresh()
+```
+### 2.点击和输入
+```python
+driver.find_element_by_id("kw").clear()#清除文本
+driver.find_element_by_id("kw").send_keys("selenium")#模拟按键输入
+driver.find_element_by_id("su").click()#单击元素
+#提交表单
+search_text = driver.find_element_by_id('kw')
+search_text.send_keys('selenium')
+search_text.submit()
+```
+### 3.鼠标事件
+```python
+perform() 执行所有ActionChains中存储的行为
+context_click() 右击
+double_click() 双击
+drag_and_drop()	 拖动
+move_to_elements()  鼠标悬停
+```
 ## 一：获取页面内容
 ```python
 from selenium import webdriver
