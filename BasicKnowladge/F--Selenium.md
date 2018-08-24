@@ -202,7 +202,8 @@ driver.close() 关闭当前窗口
 ### 第一步：安装FireFox的katalon Recorder插件
 直接打开扩展中心，然后输入katalon Recorder即可找到插件，安装之后即可。
 ### 第二步：使用FireFox的插件来实现自动化操作
-
+![操作页面](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/imgs/Katalon%20%20Recorder.png)
+![代码复制页面](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/imgs/Katalon2.png)
 
 ## 可应用方向
 - 知乎：在selenium中打开这个连接：https://www.zhihu.com/explore 是可以不需要登陆的查看问题和回答，经过一番测试，只需要经过一系列的点击和下拉即可获取到全部内容，不过这样子确实比较繁琐。
