@@ -93,3 +93,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [淘宝商品爬取](https://blog.csdn.net/Leesoar521yt/article/details/81461939)：直接使用selenium来爬取淘宝上ipad的数据
 - [12306抢票脚本](https://github.com/bsbforever/spider/blob/master/selenium_12306.py)
 - [安居客爬虫](https://blog.csdn.net/xudailong_blog/article/details/79303820)
+- [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
