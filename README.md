@@ -94,3 +94,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [12306抢票脚本](https://github.com/bsbforever/spider/blob/master/selenium_12306.py)
 - [安居客爬虫](https://blog.csdn.net/xudailong_blog/article/details/79303820)
 - [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
+- [莫烦博客](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/5-01-selenium/)
