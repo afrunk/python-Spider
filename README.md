@@ -90,4 +90,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [OKEX](https://okexcomweb.bafang.com/account/login):[API](https://github.com/okcoin-okex/API-docs-OKEx.com)区块链批量交易脚本
 - [网易云评论](https://github.com/monkey-soft/SchweizerMesser)：存入mogondb，该作者经营一个[公众号](https://github.com/monkey-soft/treasure)
 - [NGUWQ掘金作者github库](https://github.com/NGUWQ/Python3Spider)：确实在爬虫方面做的很不错，之前我没有深入学习selenium的时候有个租房的单子没有接，有个去哪儿酒店的单子没有接，但是用selenium来做确实可以解决很多问题，就好像之前我爬取了京东的书的评价一样的，之前爬取手机的单子就可以通过这样的方法来实现了。只有不断的学习进步才可以让自己的眼界更加的开阔，更加的牛逼。[爬虫进阶之去哪儿酒店（国内外）](https://juejin.im/post/5b7b6a1fe51d4538d5175073)
-- [淘宝商品爬取](https://blog.csdn.net/Leesoar521yt/article/details/81461939)
+- [淘宝商品爬取](https://blog.csdn.net/Leesoar521yt/article/details/81461939)：直接使用selenium来爬取淘宝上ipad的数据
