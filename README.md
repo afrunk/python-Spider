@@ -88,4 +88,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
 - [爬虫合集](https://github.com/bodekjan/awesome-spider)：年久失修
 - [OKEX](https://okexcomweb.bafang.com/account/login):[API](https://github.com/okcoin-okex/API-docs-OKEx.com)区块链批量交易脚本
-- [网易云评论](https://github.com/monkey-soft/SchweizerMesser)：存入mogondb
+- [网易云评论](https://github.com/monkey-soft/SchweizerMesser)：存入mogondb，该作者经营一个[公众号](https://github.com/monkey-soft/treasure)
