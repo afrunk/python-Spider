@@ -87,3 +87,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [廖雪峰python学习笔记](https://blog.csdn.net/u012084802/article/category/7370766)：python基础知识排查
 - [编程派](http://codingpy.com/category/tutorials/)：python各种实现
 - [爬虫合集](https://github.com/bodekjan/awesome-spider)：年久失修
+- [OKEX](https://okexcomweb.bafang.com/account/login):[API](https://github.com/okcoin-okex/API-docs-OKEx.com)区块链批量交易脚本
