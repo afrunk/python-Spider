@@ -200,6 +200,7 @@ actions = ActionChains(browser)
 actions.drag_and_drop(source, target)
 actions.perform()
 ```
+实战项目：虎嗅拖拽验证码的通过
 ### 3.选项卡操作
 在第一个选项卡打开百度 在第二个选项卡打开淘宝 在返回第一个选项卡打开python官网
 ```python
