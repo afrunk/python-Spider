@@ -72,6 +72,8 @@ Python reptile code<br>
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
+## PySpider
+可视化爬虫框架
 ## APP
 [抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)
 ## 其他
