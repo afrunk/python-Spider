@@ -7,7 +7,7 @@
 * 《颠覆式创新》
 * 《创业36条军规》
     > 我回想自己的经历，比较遗憾的就是未曾在大公司打过工，导致很多的管理方式需要自己去悟，去偷师学艺，虽也有所成就，但毕竟走了很多弯路。如果可以选择，最理想的职业道路是本科即可，不必读研究生，除非你想做学问。走出校门进入大公司工作两到三年，然后进入小公司或者去创业。我不赞成在大公司待太久，我认为在大公司待5年以上的人基本就废了，进入眼高手低一群，成了温室里的小白鼠，生存能力退化，却又自视很高。这样的人一旦离开大公司的环境，身上的品牌光环去掉之后，会顿显能力缺失，要跌跟头的。
-*  [gitbook飞龙书集](https://legacy.gitbook.com/@wizardforcel)
+*  [gitbook飞龙书集](https://legacy.gitbook.com/@wizardforcel):如此篇[生物劝退文](https://wizardforcel.gitbooks.io/bio-discouragement/content/1.html)
 ## 一：技术方向
 ### 1.区块链
 思考来源博客：[timqi](https://www.timqi.com/2018/03/01/blockchain-aerial/)<br>
