@@ -1,0 +1,2 @@
+# Pyspider
+直接在pip中安装之后,在cmd端输入pyspider all即可在本地的localhost:5000端口打开web运行界面
