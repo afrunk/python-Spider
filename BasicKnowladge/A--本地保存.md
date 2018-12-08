@@ -3,7 +3,7 @@
 - [x] json
 - [x] csv
 - [x] image
-
+- [x] excle的批处理
 ## txt
 - 从txt中读取文件
 ```python
@@ -134,4 +134,145 @@ def get_img(url,username):
     except:
         print("Failed"+username)
         pass
+```
+
+## excle的批处理
+```python
+__author__ = 'afrunk'
+__date__ = '2018/12/4 12:03'
+import xlrd
+import csv
+import xlwt
+style0 = xlwt.easyxf('font: name Times New Roman, color-index red, bold on', num_format_str='#,##0.00')
+style1 = xlwt.easyxf(num_format_str='D-MMM-YY')
+wb = xlwt.Workbook()
+ws = wb.add_sheet('A Test Sheet', cell_overwrite_ok=True)  # 当前表的名字 后面加上True才可避免被重复写入时的报错
+
+import os
+filelists=[]
+filelists2=[]
+def test():
+    workbook2 = xlrd.open_workbook(r'888735_20181001-20181031_全部渠道_商品明细.xls')
+    sheet2 = workbook2.sheet_by_index(0)
+    pcols2 = sheet2.col_values(0)
+    print(pcols2)
+
+def test1():
+    numh = 0.0
+    for f in os.listdir('F:\Various competitions\Python_C接单群\MakeMoneyByMyself\Excle批处理\新建文件夹'):
+        if "全部渠道" in f.split("_"):
+            print("file:,",f)
+            wb = xlrd.open_workbook(os.path.abspath(f))
+            table = wb.sheet_by_index(0)
+            for r in range(1,table.nrows):
+                numh = r+ numh
+            print('numh:',numh)
+
+#生成总表
+def filelist():
+    # 获取到商品编码
+    i = 0
+    csv_reader = csv.reader(open('导出SPU.csv'))
+    one = 0
+    for row in csv_reader:
+        # print(row[0])
+        ws.write(i, 0, row[0])
+        ws.write(i, 1, one)
+        ws.write(i, 2, one)
+        ws.write(i, 3, one)
+        i += 1
+    ws.write(0, 1, "历史下单总和")
+    ws.write(0, 2, "历史访客总和")
+    ws.write(0, 3, "7天访客数")
+    wb.save("总表.xls")
+    #批量处理excle文件
+    for root,dirs,files in os.walk(".",topdown=False):
+        for name in files:
+            str=os.path.join(root,name)
+            # if str.split(".")[-1]=='xls':
+            if "全部渠道" in str.split("_"):
+                # print(str)
+                filelists.append(str)
+            if "七天访客" in str.split("_"):
+                filelists2.append(str)
+    print(filelists)
+
+    for m in range(0,len(filelists)):
+        print(filelists[m])
+        workbook=xlrd.open_workbook(filelists[m])
+        workbook2 = xlrd.open_workbook(r'总表.xls')
+        sheet = workbook.sheet_by_index(0)
+        sheet2 = workbook2.sheet_by_index(0)
+
+        cols2 = sheet2.col_values(0)#总表的第一列
+        cols = sheet.col_values(0)#取值表的第一列
+
+        xiadanzonghe =sheet2.col_values(1)
+        lshifangke =sheet2.col_values(2)
+        # qitianfangkeshu=sheet2.col_values(3)
+
+        len1=sheet.nrows
+        len2=sheet2.nrows
+        for i in range(1,len1):
+            for j in range(1,len2):
+                if (cols[i] == cols2[j]):#编号相同则输出编号之后将总表的第二列相加
+                    print(cols2[j])
+                    xiadanzonghe[j] +=sheet.col_values(8)[i]
+
+                    # print(xiadanzonghe[j])
+
+                    print(sheet.col_values(8)[i])
+
+                    lshifangke[j]+=sheet.col_values(3)[i]
+
+                    print(lshifangke[j])
+
+                    ws.write(j,2,lshifangke[j])
+
+                    ws.write(j,1,xiadanzonghe[j])
+
+                    # qitianfangkeshu = sheet2.col_values()
+                    # ws.write(j, 3, qitianfangkeshu[j])
+        wb.save('总表.xls')
+
+    workbook1 = xlrd.open_workbook(filelists2[0])
+    workbook22 = xlrd.open_workbook(r'总表.xls')
+    sheet1 = workbook1.sheet_by_index(0)
+    sheet22 = workbook22.sheet_by_index(0)
+    print("开始七天的测试")
+    print(filelists2[0])
+    cols2 = sheet22.col_values(0)  # 总表的第一列
+    cols = sheet1.col_values(0)  # 取值表的第一列
+    qitianfangkeshu = sheet22.col_values(3)
+    len11 = sheet1.nrows
+    len22 = sheet22.nrows
+    for k in range(1, len11):
+        for y in range(1, len22):
+            if (cols[k] == cols2[y]):  # 编号相同则输出编号之后将总表的第二列相加
+                print(cols2[y])
+                qitianfangkeshu[y] += sheet1.col_values(3)[k]
+                ws.write(y, 3, qitianfangkeshu[y])
+    wb.save('总表.xls')
+
+def dierbufen():
+    workbook22 = xlrd.open_workbook(r'总表.xls')
+    sheet22 = workbook22.sheet_by_index(0)
+    ws.write(0,0,"商品编码")
+    ws.write(0,1,"上下架(上架/下架)")
+    len=sheet22.nrows
+    print(sheet22.col_values(1))
+    for sm in range(1,len):
+        ws.write(sm, 0, sheet22.col_values(0)[sm])
+        if sheet22.col_values(1)[sm]==0 and sheet22.col_values(3)[sm]==0:
+            ws.write(sm, 1, "下架")
+            print(sheet22.col_values(0)[sm],"下架")
+        else:
+            ws.write(sm, 1, "上架")
+            print(sheet22.col_values(0)[sm],"上架")
+    wb.save("上下架表.xls")
+if __name__=='__main__':
+
+    # filelist()
+    # test1()
+    dierbufen()
 ```
