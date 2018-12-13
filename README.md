@@ -35,6 +35,7 @@ Python reptile code<br>
    * 多重加密
    * 登陆获取
 - 分布式爬虫
+- [封装](https://github.com/afrunk/Spider-Summer-for-Learing/blob/master/BasicKnowladge/I-exe%E8%84%9A%E6%9C%AC%E6%89%93%E5%8C%85.md)
 ## Spider--Requests
 ##### Zero--ZhihuBAsic:
   * 基础知识解析<br>
