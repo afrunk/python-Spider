@@ -22,7 +22,6 @@ Python reptile code<br>
    * [x] [selenium](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/F--Selenium.md):处理动态交页面数据
 - 存储：
    * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/A--%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
-   * [ ] [NC数据批量处理](https://github.com/afrunk/Spider-Summer-for-Learing/blob/master/BasicKnowladge/J-nc%E6%95%B0%E6%8D%AE%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86.md)
    * [ ] 数据库存储：
       - [mongodb](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/E--mongoDB.md)
       - mysql
