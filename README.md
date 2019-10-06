@@ -61,7 +61,7 @@
 |21|[政府数据](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)|爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`|
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
 |23|[苹果](https://github.com/afrunk/python-Spider/blob/master/Spider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B/test.py)| requests Emain Beautifulsoup Log|
-|24|[]()||
+|24|[儿童故事]()|requests Bs4 Pymysql|
 
 
 ## Scrapy
@@ -104,3 +104,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
 - [莫烦博客](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/5-01-selenium/)
 - [gitbook](https://legacy.gitbook.com/@wizardforcel):大概在五十本书左右,发现还可以下载pdf版本的文档,多好的东西阿,为什么就是这么的不稳定的呢?要不然我何苦来这里写笔记.
+- [爬虫待实现库](https://github.com/librauee/Reptile/blob/master/README.md)
