@@ -60,7 +60,7 @@
 |20|[政府工作报告](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Sever-Govcn/%E6%A2%A6%E6%83%B3%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF.md)|爬取政府工作报告文本进行分词和词云  `jieba`  `wordcloud` `可视化`|
 |21|[政府数据](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)|爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`|
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
-/23/[苹果]()/ requests Emain Beautifulsoup Log|
+|23|[苹果]()| requests Emain Beautifulsoup Log|
 
 
 
