@@ -37,6 +37,23 @@ Python reptile code<br>
 - 分布式爬虫
 - [封装](https://github.com/afrunk/Spider-Summer-for-Learing/blob/master/BasicKnowladge/I-exe%E8%84%9A%E6%9C%AC%E6%89%93%E5%8C%85.md)
 ## Spider--Requests
+
+##### [2019-AllNewsSpider]()
+***
+|  Number |   Website |      Document |
+|:------:|:------:|:------:|
+|1|[0 SpiderDigikey](https://github.com/afrunk/spiderClock)|该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题|
+ 
+该文件夹下存放2019年来的有关的爬虫，更多的有关多线程和Mysql数据库的存储有关。
+- [0 SpiderDigikey](https://github.com/afrunk/spiderClock):该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题
+- [1 b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/blob/master/Spider/2019-AllNewsSpider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96/bSiteSipderEasy.py):获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般
+- [2 数学建模爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/2%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%88%AC%E8%99%AB)：一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。
+- [3 小说爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/3%20%E5%B0%8F%E8%AF%B4%E7%88%AC%E8%99%AB):文本写入操作的简单记录，无其他用处
+- [4 移动通话记录](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/4%20%E7%A7%BB%E5%8A%A8%E9%80%9A%E8%AF%9D%E8%AE%B0%E5%BD%95):难点在于获取POST链接，以及写入mysql数据库
+- [5 房地产数据爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/5%20%E6%88%BF%E5%9C%B0%E4%BA%A7%E6%95%B0%E6%8D%AE%E7%88%AC%E8%99%AB):HTMl多层循环，数据库存储 [目标网站](https://cucc.tazzfdc.com/reisPub/pub/welcome)
+- [6 去哪儿携程门票评论](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/6%20%E5%8E%BB%E5%93%AA%E5%84%BF%E6%90%BA%E7%A8%8B%E9%97%A8%E7%A5%A8%E8%AF%84%E8%AE%BA):去哪儿的评论简单，直接get拼接的链接即可。携程的POST请求链接不同景点的全都一直，修改的是data里的cid值。数据库存储再导出成excle，快，而且可以避免重复数据的抓取。
+- [7 finar论文网站数据抓取](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/7%20finar%E8%AE%BA%E6%96%87%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96):多线程、随机休眠、数据库存储、日志文件记录爬虫
+
 ##### Zero--ZhihuBAsic:
   * 基础知识解析<br>
   * 爬取淘宝指定商品和价格:requetst||re<br>
@@ -61,16 +78,6 @@ Python reptile code<br>
   爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`
 #####  [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)
   批量盗图
-##### [2019-AllNewsSpider]()
-该文件夹下存放2019年来的有关的爬虫，更多的有关多线程和Mysql数据库的存储有关。
-- [0 SpiderDigikey](https://github.com/afrunk/spiderClock):该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题
-- [1 b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/blob/master/Spider/2019-AllNewsSpider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96/bSiteSipderEasy.py):获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般
-- [2 数学建模爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/2%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%88%AC%E8%99%AB)：一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。
-- [3 小说爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/3%20%E5%B0%8F%E8%AF%B4%E7%88%AC%E8%99%AB):文本写入操作的简单记录，无其他用处
-- [4 移动通话记录](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/4%20%E7%A7%BB%E5%8A%A8%E9%80%9A%E8%AF%9D%E8%AE%B0%E5%BD%95):难点在于获取POST链接，以及写入mysql数据库
-- [5 房地产数据爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/5%20%E6%88%BF%E5%9C%B0%E4%BA%A7%E6%95%B0%E6%8D%AE%E7%88%AC%E8%99%AB):HTMl多层循环，数据库存储 [目标网站](https://cucc.tazzfdc.com/reisPub/pub/welcome)
-- [6 去哪儿携程门票评论](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/6%20%E5%8E%BB%E5%93%AA%E5%84%BF%E6%90%BA%E7%A8%8B%E9%97%A8%E7%A5%A8%E8%AF%84%E8%AE%BA):去哪儿的评论简单，直接get拼接的链接即可。携程的POST请求链接不同景点的全都一直，修改的是data里的cid值。数据库存储再导出成excle，快，而且可以避免重复数据的抓取。
-- [7 finar论文网站数据抓取](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/7%20finar%E8%AE%BA%E6%96%87%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96):多线程、随机休眠、数据库存储、日志文件记录爬虫
 
   
 ## Spider--Selenium
