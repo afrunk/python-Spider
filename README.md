@@ -22,7 +22,7 @@ Python reptile code<br>
    * [x] [selenium](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/F--Selenium.md):处理动态交页面数据
 - 存储：
    * [x] [本地保存](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/A--%E6%9C%AC%E5%9C%B0%E4%BF%9D%E5%AD%98.md)：txt、excle、csv
-   * [ ] 数据库存储：
+   * [x] 数据库存储：
       - [mongodb](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/E--mongoDB.md)
       - [mysql](https://github.com/afrunk/Summer-for-Learing/blob/master/BasicKnowladge/J-Mysql.md)
 - 爬虫框架：
@@ -63,19 +63,10 @@ Python reptile code<br>
 |19|[我主良缘网](https://github.com/afrunk/python-Spider/blob/master/Spider/Six--WZLY/lovewzly.py)|爬取我主良缘网的信息和图片并进行可视化分析 `pyechart` `可视化`|
 |20|[政府工作报告](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Sever-Govcn/%E6%A2%A6%E6%83%B3%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF.md)|爬取政府工作报告文本进行分词和词云  `jieba`  `wordcloud` `可视化`|
 |21|[政府数据](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)|爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`|
+|22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
 
- 
 
   
-## Spider--Selenium
-##### A--SilumatedLoginZhihu:
-  模拟登录知乎<br>
-##### B--Qzone
-  模拟登录qq空间，爬取某好友的所有说说内容保存在txt并制作词云。<br>
-##### C--Weibo
-  模拟登录微博，爬取某指定好友的所有微博内容存在txt并制作词云。<br>
-##### [D--JD](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)
-  爬取京东图书评论，动态难破解直接使用此方法。<br>
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
@@ -84,7 +75,9 @@ Python Scrapy project group！Daily work and project set。<br>
 可视化爬虫框架
 
 ## APP
-[抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)
+|  Number |   Website |      Document |
+|:------:|:------:|:------:|
+|1|[抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)||
 
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
