@@ -39,13 +39,13 @@
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[Digikey美国电子产品网站](https://github.com/afrunk/spiderClock)|该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题|
-|2 |[b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/blob/master/Spider/2019-AllNewsSpider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96/bSiteSipderEasy.py)|获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般|
-|3 |[小说爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/3%20%E5%B0%8F%E8%AF%B4%E7%88%AC%E8%99%AB)|文本写入操作的简单记录，无其他用处|
-|4|[数学建模爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/2%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%88%AC%E8%99%AB)|一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。|
-|5|[移动通话记录](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/4%20%E7%A7%BB%E5%8A%A8%E9%80%9A%E8%AF%9D%E8%AE%B0%E5%BD%95)|难点在于获取POST链接，以及写入mysql数据库|
-|6|[房地产数据爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/5%20%E6%88%BF%E5%9C%B0%E4%BA%A7%E6%95%B0%E6%8D%AE%E7%88%AC%E8%99%AB)|HTMl多层循环，数据库存储 [目标网站](https://cucc.tazzfdc.com/reisPub/pub/welcome)|
-|7|[去哪儿携程门票评论](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/6%20%E5%8E%BB%E5%93%AA%E5%84%BF%E6%90%BA%E7%A8%8B%E9%97%A8%E7%A5%A8%E8%AF%84%E8%AE%BA)|去哪儿的评论简单，直接get拼接的链接即可。携程的POST请求链接不同景点的全都一直，修改的是data里的cid值。数据库存储再导出成excle，快，而且可以避免重复数据的抓取。|
-|8|[finar论文网站数据抓取](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/7%20finar%E8%AE%BA%E6%96%87%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96)|多线程、随机休眠、数据库存储、日志文件记录爬虫|
+|2 |[b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/tree/master/Spider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96)|获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般|
+|3 |[小说爬虫](https://github.com/afrunk/python-Spider/blob/master/Spider/3%20%E5%B0%8F%E8%AF%B4%E7%88%AC%E8%99%AB/booksSpider.py)|文本写入操作的简单记录，无其他用处|
+|4|[数学建模爬虫](https://github.com/afrunk/python-Spider/blob/master/Spider/2%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%88%AC%E8%99%AB/shuxuejianmoSpider.py)|一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。|
+|5|[移动通话记录](https://github.com/afrunk/python-Spider/blob/master/Spider/4%20%E7%A7%BB%E5%8A%A8%E9%80%9A%E8%AF%9D%E8%AE%B0%E5%BD%95/10086Spider.py)|难点在于获取POST链接，以及写入mysql数据库|
+|6|[房地产数据爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/5%20%E6%88%BF%E5%9C%B0%E4%BA%A7%E6%95%B0%E6%8D%AE%E7%88%AC%E8%99%AB)|HTMl多层循环，数据库存储 [目标网站](https://cucc.tazzfdc.com/reisPub/pub/welcome)|
+|7|[去哪儿携程门票评论](https://github.com/afrunk/python-Spider/blob/master/Spider/6%20%E5%8E%BB%E5%93%AA%E5%84%BF%E6%90%BA%E7%A8%8B%E9%97%A8%E7%A5%A8%E8%AF%84%E8%AE%BA/dishiniSpider.py)|去哪儿的评论简单，直接get拼接的链接即可。携程的POST请求链接不同景点的全都一直，修改的是data里的cid值。数据库存储再导出成excle，快，而且可以避免重复数据的抓取。|
+|8|[finar论文网站数据抓取](https://github.com/afrunk/python-Spider/blob/master/Spider/7%20finar%E8%AE%BA%E6%96%87%E7%BD%91%E7%AB%99%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8F%96/zhuanliSpider.py)|多线程、随机休眠、数据库存储、日志文件记录爬虫|
 |9|[爬取淘宝指定商品和价格](https://github.com/afrunk/python-Spider/blob/master/Spider/Zero--ZhihuBAsic/Taobao_file.py)|requests re|
 |10|[爬取股票数据](https://github.com/afrunk/python-Spider/blob/master/Spider/Zero--ZhihuBAsic/Stock_Data.py)|requests bs4|
 |11|[人民日报时评](https://github.com/afrunk/python-Spider/blob/master/Spider/Zero--ZhihuBAsic/renmingribao.py)| requests bs4|
@@ -60,7 +60,7 @@
 |20|[政府工作报告](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Sever-Govcn/%E6%A2%A6%E6%83%B3%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF.md)|爬取政府工作报告文本进行分词和词云  `jieba`  `wordcloud` `可视化`|
 |21|[政府数据](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)|爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`|
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
-|23|[苹果](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B)| requests Emain Beautifulsoup Log|
+|23|[苹果](https://github.com/afrunk/python-Spider/blob/master/Spider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B/test.py)| requests Emain Beautifulsoup Log|
 |24|[]()||
 
 
