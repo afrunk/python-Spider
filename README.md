@@ -38,8 +38,7 @@ Python reptile code<br>
 - [封装](https://github.com/afrunk/Spider-Summer-for-Learing/blob/master/BasicKnowladge/I-exe%E8%84%9A%E6%9C%AC%E6%89%93%E5%8C%85.md)
 ## Spider--Requests
 
-##### [2019-AllNewsSpider]()
-***
+
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[Digikey美国电子产品网站](https://github.com/afrunk/spiderClock)|该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题|
@@ -66,7 +65,6 @@ Python reptile code<br>
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
 
 
-  
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
@@ -78,6 +76,13 @@ Python Scrapy project group！Daily work and project set。<br>
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)||
+
+## 接单
+|  Number |   Website |      Document |
+|:------:|:------:|:------:|
+|1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
+
+
 
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
@@ -101,8 +106,3 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
 - [莫烦博客](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/5-01-selenium/)
 - [gitbook](https://legacy.gitbook.com/@wizardforcel):大概在五十本书左右,发现还可以下载pdf版本的文档,多好的东西阿,为什么就是这么的不稳定的呢?要不然我何苦来这里写笔记.
-
-## 接单
-|  Number |   Website |      Document |
-|:------:|:------:|:------:|
-|1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
