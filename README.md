@@ -4,7 +4,7 @@ Python reptile code<br>
 [自我进化](https://github.com/afrunk/Summer-for-Learing/blob/master/TechnicalThinking.md)<br>
 [他我进化](https://github.com/afrunk/Summer-for-Learing/blob/master/SkillThinking.md)<br>
 [md语法教程](https://www.jianshu.com/p/86e7fa33de8e)
->  本库是本人自己学习爬虫的过程中学习所总结的一些东西，APP\Spider--Selenium\Spider\Scrapy等都是各种项目的具体的文件夹，其中大部分都具有解释性的实现md文档，而BasicKnowladeg文件夹内是在学习的过程中所需要掌握和使用的一些第三方库或数据库等等技术记录文章，不仅仅是为自己的未来的实践做一个记录查询，更多的是希望后来人可以更快速和系统的学习爬虫
+>  本库是本人自己学习的过程中学习所总结的一些东西，APP\Spider--Selenium\Spider\Scrapy等都是各种项目的具体的文件夹，其中大部分都具有解释性的实现md文档，而BasicKnowladeg文件夹内是在学习的过程中所需要掌握和使用的一些第三方库或数据库等等技术记录文章，不仅仅是为自己的未来的实践做一个记录查询，更多的是希望后来人可以更快速和系统的学习爬虫
 ## 技术点
 - 网页知识：
    * CSS\HTML:分析DOM提取网页内容
@@ -61,6 +61,18 @@ Python reptile code<br>
   爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`
 #####  [鞋图]( http://qcr0122.x.yupoo.com/albums?from=singlemessage&isappinstalled=0&page=2)
   批量盗图
+##### [2019-AllNewsSpider]()
+该文件夹下存放2019年来的有关的爬虫，更多的有关多线程和Mysql数据库的存储有关。
+- [0 SpiderDigikey](https://github.com/afrunk/spiderClock):该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题
+- [1 b站弹幕爬虫可视化]():获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般
+- [2 数学建模爬虫]()：一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。
+- [3 小说爬虫]():文本写入操作的简单记录，无其他用处
+- [4 移动通话记录]():难点在于获取POST链接，以及写入mysql数据库
+- [5 房地产数据爬虫]():HTMl多层循环，数据库存储 [目标网站](https://cucc.tazzfdc.com/reisPub/pub/welcome)
+- [6 去哪儿携程门票评论]():去哪儿的评论简单，直接get拼接的链接即可。携程的POST请求链接不同景点的全都一直，修改的是data里的cid值。数据库存储再导出成excle，快，而且可以避免重复数据的抓取。
+- [7 finar论文网站数据抓取]():多线程、随机休眠、数据库存储、日志文件记录爬虫
+
+  
 ## Spider--Selenium
 ##### A--SilumatedLoginZhihu:
   模拟登录知乎<br>
@@ -73,10 +85,13 @@ Python reptile code<br>
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
+
 ## PySpider
 可视化爬虫框架
+
 ## APP
 [抓包](https://github.com/afrunk/Summer-for-Learing/blob/master/APP/charles%E2%80%94%E2%80%94Capture%20tutorial.md)
+
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集
 - [Jack Cui](http://cuijiahua.com/blog/2018/03/spider-5.html)：python系列文章（中级可吸收）
@@ -99,3 +114,6 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
 - [莫烦博客](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/5-01-selenium/)
 - [gitbook](https://legacy.gitbook.com/@wizardforcel):大概在五十本书左右,发现还可以下载pdf版本的文档,多好的东西阿,为什么就是这么的不稳定的呢?要不然我何苦来这里写笔记.
+
+## 接单
+- [0 Pdf转txt统计词频]():代码有全部得注释，主要难点在于统计词频和复写excle
