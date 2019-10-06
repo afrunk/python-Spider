@@ -39,7 +39,7 @@
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[Digikey美国电子产品网站](https://github.com/afrunk/spiderClock)|该爬虫单独建了一个Repository,大批量抓取近900万数据。涉及多线程、数据库存储和导出、图片保存、进程监控等问题|
-| 2 |[b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/blob/master/Spider/2019-AllNewsSpider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96/bSiteSipderEasy.py)|获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般|
+|2 |[b站弹幕爬虫可视化](https://github.com/afrunk/python-Spider/blob/master/Spider/2019-AllNewsSpider/1%20b%E7%AB%99%E5%BC%B9%E5%B9%95%E7%88%AC%E8%99%AB%E5%8F%AF%E8%A7%86%E5%8C%96/bSiteSipderEasy.py)|获取b站弹幕的XML文件简单，复杂的地方在于如何处理和去重统计弹幕数。词云做的一般|
 |3 |[小说爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/3%20%E5%B0%8F%E8%AF%B4%E7%88%AC%E8%99%AB)|文本写入操作的简单记录，无其他用处|
 |4|[数学建模爬虫](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/2%20%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%88%AC%E8%99%AB)|一动态刷新页面的重复抓取写入Excle，碰到的难点在于如何修改而不覆盖之前的数据。|
 |5|[移动通话记录](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/4%20%E7%A7%BB%E5%8A%A8%E9%80%9A%E8%AF%9D%E8%AE%B0%E5%BD%95)|难点在于获取POST链接，以及写入mysql数据库|
@@ -60,8 +60,8 @@
 |20|[政府工作报告](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Sever-Govcn/%E6%A2%A6%E6%83%B3%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF.md)|爬取政府工作报告文本进行分词和词云  `jieba`  `wordcloud` `可视化`|
 |21|[政府数据](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider/Eight--DemographicVisualization/%E6%88%91%E6%89%80%E6%9C%89%E7%9A%84%E8%87%AA%E8%B4%9F%E9%83%BD%E6%9D%A5%E8%87%AA%E6%88%91%E7%9A%84%E8%87%AA%E5%8D%91.md)|爬取政府人口的数据进行本地同步可视化（第一个自己实现的动态可视化界面）`pyecharts`   `可视化`|
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
-|23|[苹果]()| requests Emain Beautifulsoup Log|
-
+|23|[苹果](https://github.com/afrunk/python-Spider/tree/master/Spider/2019-AllNewsSpider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B)| requests Emain Beautifulsoup Log|
+|24|[]()||
 
 
 ## Scrapy
