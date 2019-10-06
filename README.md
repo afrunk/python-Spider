@@ -103,4 +103,6 @@ Python Scrapy project group！Daily work and project set。<br>
 - [gitbook](https://legacy.gitbook.com/@wizardforcel):大概在五十本书左右,发现还可以下载pdf版本的文档,多好的东西阿,为什么就是这么的不稳定的呢?要不然我何苦来这里写笔记.
 
 ## 接单
-- [0 Pdf转txt统计词频]():代码有全部得注释，主要难点在于统计词频和复写excle
+|  Number |   Website |      Document |
+|:------:|:------:|:------:|
+|1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
