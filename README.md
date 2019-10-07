@@ -62,7 +62,7 @@
 |22|[京东](https://github.com/afrunk/Summer-for-Learing/blob/master/Spider--Selenium/D--JD/%E6%88%91%E4%BA%A6%E9%A3%98%E9%9B%B6%E4%B9%85.md)| 爬取京东图书评论，动态难破解直接使用此方法。|
 |23|[苹果](https://github.com/afrunk/python-Spider/blob/master/Spider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B/test.py)| requests Emain Beautifulsoup Log|
 |24|[儿童故事]()|requests Bs4 Pymysql|
-|25|[淘宝店铺营业额]()| requests Bs4 Pymysql time 反爬 |
+|25|[淘宝店铺营业额](https://github.com/afrunk/python-Spider/tree/master/Spider/10%20%E6%B7%98%E5%AE%9D%E9%94%80%E9%87%8F%E7%88%AC%E8%99%AB)| requests Bs4 Pymysql time 反爬 |
 |26|[微博]()|
 
 
