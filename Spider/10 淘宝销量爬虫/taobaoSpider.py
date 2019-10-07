@@ -83,15 +83,15 @@ def getPages(shopName):
 
     # 循环Page数 有多少页商品就循环多少页
     for i in range(16,int(page)+1):
-        print("当前正在输出的是第{}页数据:\n".format(i))
-        # 换一家店铺需要修改的地方2（链接）
-
+        # 每十页中间间隔一个比较长的时间段 看看能不能将这个店铺全部抓取下来
         if i%10==0:
             sleepTime = random.randint(500, 1000)
             print("随机休眠{}秒".format(sleepTime))
             time.sleep(sleepTime)
 
+        print("当前正在输出的是第{}页数据:\n".format(i))
 
+        # 换一家店铺需要修改的地方2（链接）
         url='https://hm.tmall.com/i/asynSearch.htm?_ksTS=1570435935932_129&callback=jsonp130&mid=w-17871033836-0&wid=17871033836&path=/category.htm&spm=a1z10.5-b-s.w4011-17871033836.421.11b36a4fdZlBbN&scene=taobao_shop&pageNo={}'.format(i)
         # 可以返回HTML和 False 判断是否被反爬
         OnePageHtml = getHtml(url)
