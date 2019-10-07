@@ -84,10 +84,10 @@ def getPages(shopName):
     time.sleep(sleepTime)
 
     # 循环Page数 有多少页商品就循环多少页
-    for i in range(30,int(page)+1):
+    for i in range(70,int(page)+1):
         # 每十页中间间隔一个比较长的时间段 看看能不能将这个店铺全部抓取下来
         if i%10==0:
-            sleepTime = random.randint(400, 600)
+            sleepTime = random.randint(150, 300)
             print("随机休眠{}秒".format(sleepTime))
             time.sleep(sleepTime)
 
@@ -142,12 +142,26 @@ def getPages(shopName):
             return False
 
 
+# 从数据库读取每家店铺的价格并进行查询单价和销量进行求和
+def calculationPrice():
+    try:
+        # 获取数据库中店铺名的列表
+        sql='select distinct shopname from taobao' # 去掉重复的店铺名
+        cursor.execute(sql)
+        for i in cursor.fetchall():
+            shopName=i[1]
+            print(shopName)
 
-
+    except:
+        print("Mysql语法错误！")
 if __name__=='__main__':
-    # 换一家店铺需要修改的地方0（链接）
+
     # 存入数据库 方便后续计算每月销售额
-    shopName = 'HM'
-    floge=getPages(shopName)
-    if floge==False:
-        print("该店铺没有抓取完成！")
+    # 换一家店铺需要修改的地方0（链接）
+    # shopName = 'HM'
+    # floge=getPages(shopName)
+    # if floge==False:
+    #     print("该店铺没有抓取完成！")
+    #
+    # 计算销售额部分
+    calculationPrice()
