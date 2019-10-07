@@ -63,6 +63,7 @@
 |23|[苹果](https://github.com/afrunk/python-Spider/blob/master/Spider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B/test.py)| requests Emain Beautifulsoup Log|
 |24|[儿童故事]()|requests Bs4 Pymysql|
 |25|[淘宝店铺营业额]()| requests Bs4 Pymysql time 反爬 |
+|26|[微博]()|
 
 
 ## Scrapy
