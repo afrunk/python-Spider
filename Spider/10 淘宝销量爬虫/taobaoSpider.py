@@ -42,7 +42,6 @@ def getHtml(url):
 # 获取宝贝信息写入数据库
 def getPages(shopName):
     # 换一家店铺需要修改的地方1（链接）
-
     # 第一次获取HTML得到循环Page数 为后续的循环做准备
     url='https://hm.tmall.com/i/asynSearch.htm?_ksTS=1570435935932_129&callback=jsonp130&mid=w-17871033836-0&wid=17871033836&path=/category.htm&spm=a1z10.5-b-s.w4011-17871033836.421.11b36a4fdZlBbN&scene=taobao_shop&pageNo=1' # 第一页的链接
     # 获取HTML页面
@@ -144,11 +143,9 @@ def getPages(shopName):
 if __name__=='__main__':
 
     # 存入数据库 方便后续计算每月销售额
-    # 换一家店铺需要修改的地方0（链接）
-    # shopName = 'HM'
-    # floge=getPages(shopName)
-    # if floge==False:
-    #     print("该店铺没有抓取完成！")
-    #
-    # 计算销售额部分
-    calculationPrice()
+    # 换一家店铺需要修改的地方0（店铺名）
+    shopName = 'HM'
+    floge=getPages(shopName)
+    if floge==False:
+        print("该店铺没有抓取完成！")
+
