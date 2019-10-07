@@ -44,14 +44,14 @@ def calculationPrice():
         for j in cursor.fetchall(): # 遍历查询到的嵌套列表
             price =j[1]  # 第二个元素是价格
             num=j[2] # 第三个元素是销售量
-            print(price,num)
+            # print(price,num) # 输出进行查看
             sales[i] += price * num
     # except:
     #     print("Mysql语法错误！")
 
-    print(shopNames,sales)
-    # for i in range(len(shopNames)):
-    #     print(shopNames[i],sales[i])
+    # print(shopNames,sales) # 输出列表 进行查看
+    for i in range(len(shopNames)):
+        print(shopNames[i],sales[i])
 if __name__=='__main__':
 
     # 存入数据库 方便后续计算每月销售额

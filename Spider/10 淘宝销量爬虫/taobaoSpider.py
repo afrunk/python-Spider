@@ -141,19 +141,6 @@ def getPages(shopName):
                 f.close()
             return False
 
-
-# 从数据库读取每家店铺的价格并进行查询单价和销量进行求和
-def calculationPrice():
-    try:
-        # 获取数据库中店铺名的列表
-        sql='select distinct shopname from taobao' # 去掉重复的店铺名
-        cursor.execute(sql)
-        for i in cursor.fetchall():
-            shopName=i[1]
-            print(shopName)
-
-    except:
-        print("Mysql语法错误！")
 if __name__=='__main__':
 
     # 存入数据库 方便后续计算每月销售额
