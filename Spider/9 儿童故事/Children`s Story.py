@@ -61,7 +61,7 @@ def getUrlLists():
 def getStroyTextToMysql():
     urlList = getUrlLists()  # 将每个故事的链接传回以便for循环遍历
     try:
-        for i in range(4051,len(urlList)):
+        for i in range(0,len(urlList)):
             storyHtml = getHtml(urlList[i])  # 调用获取html页面的函数获取具体的故事页面内容
             t_news = storyHtml.find('div', class_='t_news')  # 匹配有标题和故事正文的div标签
             titleStory = t_news.find('h1').text  # 标题
@@ -93,7 +93,7 @@ from email.utils import formataddr
 
 my_sender='2226846894@qq.com'    # 发件人邮箱账号
 my_pass = 'cyeykinkooacebce'              # 发件人邮箱密码(当时申请smtp给的口令)
-my_user='1740384737@qq.com'      # 收件人邮箱账号，我这边发送给自己
+# my_user='xxx@qq.com'      # 收件人邮箱账号，我这边发送给自己
 
 def SendStoryToEmail():
     try:
@@ -130,6 +130,6 @@ def SendStoryToEmail():
         pass
 
 if __name__=='__main__':
-    # getStroyTextToMysql()
-    SendStoryToEmail()
+    getStroyTextToMysql()
+    # SendStoryToEmail()
 

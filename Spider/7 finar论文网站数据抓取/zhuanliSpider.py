@@ -115,7 +115,7 @@ def get_html(url):
                 # break # 测试用语 只输出第一个 tr里的tds
 
         # 随机睡眠1-5s
-        time.sleep(random.random(1,5))
+        time.sleep(random.randint(1,5))
     except(Exception, BaseException) as e:
         print(e)
         # 如果读取失败 则写入到 日志文件
