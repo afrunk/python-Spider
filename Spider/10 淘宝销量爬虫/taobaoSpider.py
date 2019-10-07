@@ -38,6 +38,8 @@ def getHtml(url):
     else:
         flag= False
         return flag
+
+# 获取宝贝信息写入数据库
 def getPages(shopName):
     # 换一家店铺需要修改的地方1（链接）
 
@@ -82,10 +84,10 @@ def getPages(shopName):
     time.sleep(sleepTime)
 
     # 循环Page数 有多少页商品就循环多少页
-    for i in range(16,int(page)+1):
+    for i in range(30,int(page)+1):
         # 每十页中间间隔一个比较长的时间段 看看能不能将这个店铺全部抓取下来
         if i%10==0:
-            sleepTime = random.randint(500, 1000)
+            sleepTime = random.randint(400, 600)
             print("随机休眠{}秒".format(sleepTime))
             time.sleep(sleepTime)
 
