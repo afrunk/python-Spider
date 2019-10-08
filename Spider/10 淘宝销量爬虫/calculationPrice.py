@@ -53,13 +53,5 @@ def calculationPrice():
     for i in range(len(shopNames)):
         print(shopNames[i],sales[i])
 if __name__=='__main__':
-
-    # 存入数据库 方便后续计算每月销售额
-    # 换一家店铺需要修改的地方0（链接）
-    # shopName = 'HM'
-    # floge=getPages(shopName)
-    # if floge==False:
-    #     print("该店铺没有抓取完成！")
-    #
     # 计算销售额部分
     calculationPrice()

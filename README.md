@@ -106,4 +106,6 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫文章索引](https://blog.csdn.net/TheSnowBoy_2/article/details/55800142)
 - [莫烦博客](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/5-01-selenium/)
 - [gitbook](https://legacy.gitbook.com/@wizardforcel):大概在五十本书左右,发现还可以下载pdf版本的文档,多好的东西阿,为什么就是这么的不稳定的呢?要不然我何苦来这里写笔记.
-- [爬虫待实现库](https://github.com/librauee/Reptile/blob/master/README.md)
+- [爬虫待实现Github库](https://github.com/librauee/Reptile/blob/master/README.md)
+- [爬虫待实现Github库2](https://github.com/TM0831/Spiders)
+- [爬虫待实现Github库3](https://github.com/DropsDevopsOrg/ECommerceCrawlers)
