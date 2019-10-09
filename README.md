@@ -63,7 +63,9 @@
 |23|[苹果](https://github.com/afrunk/python-Spider/blob/master/Spider/8%20%E8%8B%B9%E6%9E%9C%E5%AE%98%E7%BD%91%E4%BA%8C%E6%89%8B%E5%B9%B3%E6%9D%BF%E7%9B%91%E6%B5%8B/test.py)| requests Emain Beautifulsoup Log|
 |24|[儿童故事]()|requests Bs4 Pymysql|
 |25|[淘宝店铺营业额](https://github.com/afrunk/python-Spider/tree/master/Spider/10%20%E6%B7%98%E5%AE%9D%E9%94%80%E9%87%8F%E7%88%AC%E8%99%AB)| requests Bs4 Pymysql time 反爬 |
-|26|[微博]()|
+|26|[微博]()|抓取照片墙存入本地|
+|27|[中国地震预报]()|实时抓取地震信息|
+|28|[JD]()||
 
 
 ## Scrapy
@@ -109,3 +111,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫待实现Github库](https://github.com/librauee/Reptile/blob/master/README.md)
 - [爬虫待实现Github库2](https://github.com/TM0831/Spiders)
 - [爬虫待实现Github库3](https://github.com/DropsDevopsOrg/ECommerceCrawlers)
+- [爬虫待实现Github库4](https://github.com/wkunzhi/Python3-Spider)
