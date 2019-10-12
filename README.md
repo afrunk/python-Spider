@@ -112,3 +112,4 @@ Python Scrapy project group！Daily work and project set。<br>
 - [爬虫待实现Github库2](https://github.com/TM0831/Spiders)
 - [爬虫待实现Github库3](https://github.com/DropsDevopsOrg/ECommerceCrawlers)
 - [爬虫待实现Github库4](https://github.com/wkunzhi/Python3-Spider)
+- [星巴克数据可视化](https://github.com/VonSdite/StarBucksAnalysis)
