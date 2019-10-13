@@ -83,7 +83,7 @@ Python Scrapy project group！Daily work and project set。<br>
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
-
+|2|[操作txt和csv文件]()|python简单文件操作|
 
 
 ## 其他
