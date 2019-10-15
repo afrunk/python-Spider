@@ -66,7 +66,8 @@
 |26|[微博]()|抓取照片墙存入本地|
 |27|[中国地震预报]()|实时抓取地震信息|
 |28|[JD]()||
-
+|29|[长江日报]()| 乱码 txt|
+|30|[网络作家更新状态]()| requests bs4 excle mysql|
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
