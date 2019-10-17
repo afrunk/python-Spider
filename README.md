@@ -68,6 +68,9 @@
 |28|[JD]()||
 |29|[长江日报]()| 乱码 txt|
 |30|[网络作家更新状态]()| requests bs4 excle mysql|
+|31|[短信验证码转qq群]()| 随时抓取 存入数据库 多主键判断是否重复 win32库来发送信息给qq|
+|32|[wiki]()|抓取飞机的数据写入到数据库|
+
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
@@ -84,7 +87,7 @@ Python Scrapy project group！Daily work and project set。<br>
 |  Number |   Website |      Document |
 |:------:|:------:|:------:|
 |1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
-|2|[操作txt和csv文件]()|python简单文件操作|
+|2|[操作txt和csv文件]()|python简单文件操作 读写csv文件|
 
 
 ## 其他
