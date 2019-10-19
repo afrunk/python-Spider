@@ -43,9 +43,12 @@ def getUrls(url):
     # print(as_1s)
     as_2s = soup.find_all('a',class_='c-media--v1_0_0 c-padding-top-l c-padding-bottom-l zp-list-item zp-list-item-show c-flex c-flex-center-y')
     # print(as_2s)
-    if len(as_1s) == 0:
+    if len(as_1s) == 0: # 不是上述的匹配方法 则使用下面的匹配方法
         as_1s = soup.find_all('a',class_='dl-container c-cell--v1_0_0 c-block c-text-start c-padding-top-l c-padding-bottom-l')
         as_2s = soup.find_all('a',class_='dl-container c-cell--v1_0_0 c-block c-text-start c-padding-top-l c-padding-bottom-l')
+    elif len(as_1s)==4: # 是上述的方法但是却只能匹配到4项作品
+        pass
+
 
     bookList =[] # 存放当前作家得作品链接
     for i in as_1s:
@@ -62,23 +65,39 @@ def getUrls(url):
     return bookList
 
 # 获取书的更新时间和名字
-def getTimeAndTitle(name,bookurl):
+def getTimeAndTitle(name1,bookurl):
     soup = getSoup(bookurl)
     # print(soup)
     try:
         title = soup.find('div',class_='c-header-title c-line-clamp-1 icon-right c-margin-right-l').text
-        time = soup.find('div',class_='c-chapter-extra c-text-s c-margin-left-l').text
+        time1 = soup.find('div',class_='c-chapter-extra c-text-s c-margin-left-l').text
         try:
-            if '月' in time:
+            # 在这将数据存入数据库
+            if '月' in time1:
                 # print("当前正在更新")
-                print(name+' ' +title + ' ' + time)
+                # time1 ='2019'
+                print(name1+' ' +title + ' ' + time1)
+
             else:
                 # print("几年前的")
-                time=str(time).replace('年前','')
-                time = 2019-int(time)
-                print(name+' '+title + ' ' + str(time))
+                time1=str(time1).replace('年前','')
+                time1 = str(2019-int(time1))
+                print(name1+' '+title + ' ' +time1)
+            # 将数据插入到数据库 作家 作品 时间
+            sql_1 = """
+                    INSERT IGNORE INTO author ( name1,title,time1)VALUES('{}','{}','{}'  )
+                                                """ \
+                .format(
+                pymysql.escape_string(name1),
+                pymysql.escape_string(title),
+                pymysql.escape_string(time1),
+            )
+            # print(sql_1)
+            cursor.execute(sql_1)  # 执行命令
+            db.commit()  # 提交事务
         except:
             pass
+
     except:
         print("当前作品无法抓取到时间")
 
@@ -103,9 +122,9 @@ if __name__=='__main__':
     column_datas = readexcleTosql()
     for name in column_datas:
         print(name)
-    # name = '跳舞'
+    # name = '极品妖孽'
         url = 'https://so.m.sm.cn/s?q={}&uc_param_str=dnntnwvepffrgibijbprsv&from=ucdh'.format(name)
-        # print(url)
+        print(url)
         booklist = getUrls(url)
         for i in range(0,len(booklist)):
             # print(i)

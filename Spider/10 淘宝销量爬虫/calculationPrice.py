@@ -52,6 +52,8 @@ def calculationPrice():
     # print(shopNames,sales) # 输出列表 进行查看
     for i in range(len(shopNames)):
         print(shopNames[i],sales[i])
+
+
 if __name__=='__main__':
     # 计算销售额部分
     calculationPrice()
