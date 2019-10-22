@@ -25,9 +25,10 @@ wait = WebDriverWait(browser, 30)   #指定延时时间
 def page_get(page):
     print('正在爬取第',page,'页')
     try:
+        time.sleep(random.randint(5, 10))
         url = "https://s.taobao.com/search?q=" + quote('水杯')
         browser.get(url)  #连接淘宝网
-        in_put = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#mainsrp-pager .form>input'))) #输入框
+        in_put = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#mainsrp-pager > div > div > div > div.form > input'))) #输入框
         submit = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#mainsrp-pager .form>.btn')))    #提交按钮
         in_put.clear()     #清空输入信息， 每次都要
         in_put.send_keys(page)  #输入信息
@@ -75,11 +76,13 @@ def result_save(data):
     # except:
     #     print("当前sql语句出错")
 
-
+import time
+import random
 def main():
     print("working")
-    for page in range(1,101):
+    for page in range(2,10):
         page_get(page)
+
 
 if __name__ == '__main__':
     main()
