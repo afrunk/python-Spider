@@ -2,9 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Orders/1 操作txt和csv文件/NewData.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Spider/10 淘宝销量爬虫/NewData.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/13 中国地震网/data.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/18 短信验证码转发qq群/data.csv" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/Spider/21 巨潮/2018年报/2018年报_20020716-20191019.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/8 苹果官网二手平板监测/log.txt" charset="GBK" />
   </component>
 </project>

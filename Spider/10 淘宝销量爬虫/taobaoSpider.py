@@ -48,59 +48,76 @@ def getHtml(url):
 def getPages(shopName):
     # 换一家店铺需要修改的地方1（链接）
     # 第一次获取HTML得到循环Page数 为后续的循环做准备
-    url='https://hm.tmall.com/i/asynSearch.htm?_ksTS=1570435935932_129&callback=jsonp130&mid=w-17871033836-0&wid=17871033836&path=/category.htm&spm=a1z10.5-b-s.w4011-17871033836.421.11b36a4fdZlBbN&scene=taobao_shop&pageNo=1' # 第一页的链接
+    url='https://nikekids.tmall.com/i/asynSearch.htm?_ksTS=1571504096126_588&callback=jsonp589&mid=w-18225450466-0&wid=18225450466&path=/category.htm&spm=a1z10.5-b-s.w4011-18225450466.427.2ec410752p259Q&search=y&pageNo=1' # 第一页的链接
     # 获取HTML页面
     # 第一页不需要查看是否被反爬 肯定可以运行 不判断
     OnePageHtml=getHtml(url)
+    print(OnePageHtml)
     # print(OnePageHtml)
     page=OnePageHtml.find('b',class_='\\"ui-page-s-len\\"').text.replace("1/","") # class_='\"ui-page-s\"' 里面要加反斜杠 否则匹配不到 转换成text后 替换掉前面的当前页面 获取总页数
     print(page)
     details = OnePageHtml.find_all('a',class_='\\"item-name') # 商品名
     cPrices = OnePageHtml.find_all('span',class_='\\"c-price\\"') # 价格
     saleNUms= OnePageHtml.find_all('span',class_='\\"sale-num\\"') # 销量
+    title = OnePageHtml.find_all('div',class_='\\"title\\"') # 评论
     # 前60为正常 获取这60个数据切片
     details =details[:60]
     cPrices = cPrices[:60]
     saleNUms = saleNUms[:60]
-    for num,i,j,k in zip(range(1,len(details)+1),details,cPrices,saleNUms): # 60为正常的 后续的为推荐
+    tt= title[:60]
+    for num,i,j,k,p in zip(range(1,len(details)+1),details,cPrices,saleNUms,tt): # 60为正常的 后续的为推荐
         thingname = i.text.strip() # 商品名
         price = j.text # 价格
         sale = k.text #销量
-        print(str(num)+'\t'+thingname,price,sale) # 输出
-        # 插入数据库
-        try:
-            sql_2 = """
-                        INSERT IGNORE INTO taobao (thingname,price,sale,shopName)VALUES('{}','{}','{}','{}' )
-                        """ \
-                .format(
-                        pymysql.escape_string(thingname),
-                        pymysql.escape_string(price),
-                        pymysql.escape_string(sale),
-                        pymysql.escape_string(shopName),)
-            # print(sql_2)
-            cursor.execute(sql_2)  # 执行命令
-            db.commit()  # 提交事务
-        except:
-            print("当前sql语句出错")
-    # 随机睡眠1-5s
-    sleepTime= random.randint(20,30)
-    print("随机休眠{}秒".format(sleepTime))
-    time.sleep(sleepTime)
+        title = p.text.replace('|评价:' ,'') # 评价
+        print(str(num)+'\t'+thingname,price,sale,title) # 输出
+        data = [thingname,price,sale,title]
+        # 存入csv
+        import csv
+        with open("NewData.csv", 'a+', newline='') as f:  # 写入到本地csv中 a+会自动创建文件 newline解决中间有空行的问题
+            write = csv.writer(f)
+            write.writerow(data)
 
+
+
+
+        # 插入数据库
+        # try:
+        #     sql_2 = """
+        #                 INSERT IGNORE INTO taobao (thingname,price,sale,shopName)VALUES('{}','{}','{}','{}' )
+        #                 """ \
+        #         .format(
+        #                 pymysql.escape_string(thingname),
+        #                 pymysql.escape_string(price),
+        #                 pymysql.escape_string(sale),
+        #                 pymysql.escape_string(shopName),)
+        #     # print(sql_2)
+        #     cursor.execute(sql_2)  # 执行命令
+        #     db.commit()  # 提交事务
+        # except:
+        #     print("当前sql语句出错")
+    # 随机睡眠1-5s
+    # sleepTime= random.randint(20,30)
+    # print("随机休眠{}秒".format(sleepTime))
+    # time.sleep(sleepTime)
+
+    '''
     # 循环Page数 有多少页商品就循环多少页
-    for i in range(70,int(page)+1):
+    for i in range(0,int(page)+1):
         # 每十页中间间隔一个比较长的时间段 看看能不能将这个店铺全部抓取下来
-        if i%10==0:
-            sleepTime = random.randint(150, 300)
-            print("随机休眠{}秒".format(sleepTime))
-            time.sleep(sleepTime)
+        # if i%10==0:
+        #     sleepTime = random.randint(150, 300)
+        #     print("随机休眠{}秒".format(sleepTime))
+        #     time.sleep(sleepTime)
 
         print("当前正在输出的是第{}页数据:\n".format(i))
 
         # 换一家店铺需要修改的地方2（链接）
-        url='https://hm.tmall.com/i/asynSearch.htm?_ksTS=1570435935932_129&callback=jsonp130&mid=w-17871033836-0&wid=17871033836&path=/category.htm&spm=a1z10.5-b-s.w4011-17871033836.421.11b36a4fdZlBbN&scene=taobao_shop&pageNo={}'.format(i)
+        # url='https://hm.tmall.com/i/asynSearch.htm?_ksTS=1570435935932_129&callback=jsonp130&mid=w-17871033836-0&wid=17871033836&path=/category.htm&spm=a1z10.5-b-s.w4011-17871033836.421.11b36a4fdZlBbN&scene=taobao_shop&pageNo={}'.format(i)
+        url='https://nikekids.tmall.com/i/asynSearch.htm?_ksTS=1571504096126_588&callback=jsonp589&mid=w-18225450466-0&wid=18225450466&path=/category.htm&spm=a1z10.5-b-s.w4011-18225450466.427.2ec410752p259Q&search=y&pageNo={}'.format(i)
         # 可以返回HTML和 False 判断是否被反爬
         OnePageHtml = getHtml(url)
+        # print(OnePageHtml)
         #返回的不是 False即可运行
         if OnePageHtml:
             details = OnePageHtml.find_all('a', class_='\\"item-name')  # 商品名
@@ -134,9 +151,9 @@ def getPages(shopName):
                 except:
                     print("当前sql语句出错")
             # 每次抓取后随机睡眠时间
-            sleepTime = random.randint(20,30)
-            print("随机休眠{}秒".format(sleepTime))
-            time.sleep(sleepTime)
+            # sleepTime = random.randint(20,30)
+            # print("随机休眠{}秒".format(sleepTime))
+            # time.sleep(sleepTime)
         else:
             # 如果返回else则将当前抓取到的页数记录下来 并终止程序
             content="{} 抓取到第{}页失败 ".format(shopName,i)
@@ -144,12 +161,14 @@ def getPages(shopName):
                 f.write(content + '\n')
                 f.close()
             return False
+    '''
+
 
 if __name__=='__main__':
 
     # 存入数据库 方便后续计算每月销售额
     # 换一家店铺需要修改的地方0（店铺名）
-    shopName = 'HM'
+    shopName = 'nike'
     floge=getPages(shopName)
     if floge==False:
         print("该店铺没有抓取完成！")
