@@ -1,14 +1,7 @@
-"""
-http://www.caec.org.cn/index.php?m=content&c=index&a=lists&catid=39
-
-公司名，人名字，电话和手机号，邮箱
-
-2.0 匹配text中的目标内容
-"""
-
 import requests
 from bs4 import BeautifulSoup
 import re
+import csv
 # 获取HTML页面
 def getHtml(url):
     con = requests.get(url).text
@@ -28,7 +21,7 @@ def getallpage(url):
         url_1 = a.get('href')
         # print(url_1)
         urlAllPage.append(url_1)
-        break  # 测试代码添加一个方便后续测试
+        # break  # 测试代码添加一个方便后续测试
     return urlAllPage
 
 # 获取每个地区的公司链接
@@ -56,24 +49,32 @@ def getConet(url):
     div = soup.find('div',id='zxpage').text
     # print(div)
     pattern = r"单位名称:(.*)公司"
-    compy = re.search(pattern, div).group(1)+'公司'
-    print(compy)
+    compy = re.search(pattern, div).group(1)+'公司'.replace('\xa0','')
+    # print(compy)
 
     pattern = r'主要负责人：(.*)职务'
-    name= re.search(pattern, div).group(1)
-    if name:
-        print(name)
+    name= re.search(pattern, div).group(1).replace('\xa0','')
+    # if name:
+    #     print(name)
 
     pattern =r'电话：(.*)传真'
     telephone = re.search(pattern, div)
     if telephone:
-        print(telephone.group(1).rsplit())
+        telephone=telephone.group(1).replace('\xa0','')
+        # print(telephone)
 
     pattern = r'手机：(.*)邮箱:(.*).com'
     iphone = re.search(pattern, div)
+    iph=''
+    email=''
     if iphone:
-        print(iphone.group(1,2))
-
+        iph=iphone.group(1).replace('\xa0','')
+        email =iphone.group(2).replace('\xa0','')
+        # print(iph)
+        # print(email)
+    contentList=[compy,name,telephone,iph,email]
+    # print(contentList)
+    return contentList
 
 def reTest():
     s = '单位名称:北京华开建筑装饰工程有限公司'
@@ -85,9 +86,15 @@ if __name__=='__main__':
     url = 'http://www.caec.org.cn/index.php?m=content&c=index&a=lists&catid=39'
     caeccontenturl = getPageUrl(url)
     for a in caeccontenturl:
-        print(a)
-        listContent = getConet(a)
-
+        try:
+            print(a)
+            listContent = getConet(a)
+            print(listContent)
+            with open("NewData.csv", 'a+', newline='') as f:  # 写入到本地csv中 a+会自动创建文件 newline解决中间有空行的问题
+                write = csv.writer(f)
+                write.writerow(listContent)
+        except:
+            pass
         # print(listContent)
         # break
     # reTest()

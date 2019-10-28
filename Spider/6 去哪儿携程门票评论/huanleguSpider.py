@@ -92,7 +92,7 @@ def get_all_info(i):
 
 
     for onePageInfo in OnePageInfos:
-        # print(onePageInfo)
+        print(onePageInfo)
         name_1 = onePageInfo['uid']# 用户名
         score = onePageInfo['score'] # 评分
         content_1 = onePageInfo['content'] # 具体评价内容
