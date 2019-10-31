@@ -178,7 +178,7 @@ def getHouseInfo(ss):
 
 # 测试插入excle是否有问题
 def test():
-    contentInfo=['硕园经典', '岱岳区泮河大街以南、泮河以东硕园经典4号楼2单元2404室', '2404', '4号楼', '109.84', '钢筋混凝土结构', '26.27', '83.57', '24', '住宅', '', '']
+    contentInfo=['硕园经典', '岱岳区泮河大街以南、泮河以东硕园经典4号楼2单元2404室', '2404', '4号楼', '109.84', '钢筋混凝土结构', '26.27 广东律师信息', '83.57', '24', '住宅', '', '']
     workbook = xlrd.open_workbook('data.xlsx')  # 打开工作簿
     sheets = workbook.sheet_names()  # 获取工作簿中的所有表格
     worksheet = workbook.sheet_by_name(sheets[0])  # 获取工作簿中所有表格中的的第一个表格
