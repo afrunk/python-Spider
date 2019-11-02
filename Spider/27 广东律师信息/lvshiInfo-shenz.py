@@ -41,14 +41,16 @@ def getid(num):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
         'X-Requested-With': 'XMLHttpRequest',
     }
+
+    # 需要修改两个字段
     data = {
-        'pagerOrgParam.tbOrgLsglJgjbxxVo.fwxzqh': '440100000000',
+        'pagerOrgParam.tbOrgLsglJgjbxxVo.fwxzqh': '440300000000',
         'pagerOrgParam.tbOrgLsglJgjbxxVo.obiOrgtype':'',
         'pagerOrgParam.tbOrgLsglJgjbxxVo.obiOrgname':'',
         'pagerOrgParam.tbOrgLsglJgjbxxVo.tbOrgLsglLsjgzyxxVo.creditcode':'',
         'pagerOrgParam.tbOrgLsglJgjbxxVo.tbOrgLsglLsjgzyxxVo.opiLeadername':'',
         'obiProvince': '440000000000',
-        'obiCity': '440100000000',
+        'obiCity': '440300000000',
         'obiDistrict':'',
         'pagerOrgParam.fwOrgType': '100',
         'pagerOrgParam.currentPage': '1',
@@ -121,7 +123,7 @@ def getLvsuoInfo(oid,diqu1,page1):
     data = obiOrgname+','+opiOorganformDesc+','+obiOfficeused+','+obiFounddate+','+creditcode+','+obiAddress+','+proplenum+','+diqu1
     print(obiOrgname,opiOorganformDesc,obiOfficeused,obiFounddate,creditcode,obiAddress,proplenum,diqu1)
     sql_2 = """
-        INSERT IGNORE INTO guangzhou (obiOrgname,opiOorganformDesc,obiOfficeused,obiFounddate,creditcode,obiAddress,proplenum,diqu,page)VALUES('{}','{}','{}','{}','{}','{}','{}','{}','{}'  )
+        INSERT IGNORE INTO shenzheng (obiOrgname,opiOorganformDesc,obiOfficeused,obiFounddate,creditcode,obiAddress,proplenum,diqu,page)VALUES('{}','{}','{}','{}','{}','{}','{}','{}','{}'  )
                         """ \
         .format(
         pymysql.escape_string(obiOrgname),
@@ -140,7 +142,7 @@ def getLvsuoInfo(oid,diqu1,page1):
 
 
 if __name__=='__main__':
-    for j in range(1,11):
+    for j in range(1, 95):
         idList,diqus = getid(j)
         print(len(idList),len(diqus))
         time.sleep(random.randint(1,5))
