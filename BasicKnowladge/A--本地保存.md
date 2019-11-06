@@ -1,9 +1,24 @@
 # IO
+- [x] 文件夹
 - [x] txt
 - [x] json
 - [x] csv
 - [x] image
 - [x] excle的批处理
+
+## 文件夹的处理
+```python
+import os
+os.getcwd()# 获取当前目录的文件夹
+os.chcwd('D:/work') # 修改当前的文件夹的位置
+os.makedirs('work2') # 新建目录
+os.rmdir('work2') # 删除目录 目录必须为空
+os.rename('fff.txt','fool.txt') # 重命名
+os.remove('h.txt') # 删除文件
+
+
+```
+
 ## txt
 - 从txt中读取文件
 ```python
