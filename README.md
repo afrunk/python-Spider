@@ -70,7 +70,7 @@
 |30|[网络作家更新状态]()| requests bs4 excle mysql|
 |31|[短信验证码转qq群]()| 随时抓取 存入数据库 多主键判断是否重复 win32库来发送信息给qq|
 |32|[wiki]()|抓取飞机的数据写入到数据库|
-
+|35|[投资项目信息库]()|抓取对外投资的项目字段存入数据 为后续的数据挖掘做数据准备|
 
 ## Scrapy
 Python Scrapy project group！Daily work and project set。<br>
