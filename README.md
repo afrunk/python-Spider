@@ -88,7 +88,7 @@ Python Scrapy project group！Daily work and project set。<br>
 |:------:|:------:|:------:|
 |1|[Pdf转txt统计词频]()|代码有全部得注释，主要难点在于统计词频和复写excle|
 |2|[操作txt和csv文件]()|python简单文件操作 读写csv文件|
-
+|3|[database]()|有menu的python project，涉及列表和txt的增删改查,输出端的对齐方式|
 
 ## 其他
 - [Splinter文档](https://splinter-docs-zh-cn.readthedocs.io/zh/latest/#drivers)：python开发的开源web自动化测试的工具集

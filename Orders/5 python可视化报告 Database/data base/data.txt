@@ -1,0 +1,26 @@
+Song ID,Name of the Song,Type of music,Artist,Year
+1,See You Again,Pop,Wiz khalifa,2015
+2,Promises,Pop,Wiz khalifa,2014
+3,We Own It,Pop,Wiz khalifa,2014
+4,KK,Pop,Wiz khalifa,2015
+5,Gang Up,Pop,Wiz khalifa,2017
+6,Shape of You,Pop,Ed Sheeran,2017
+7,Photograph,Pop,Ed Sheeran,2014
+8,Prefect,Pop,Ed Sheeran,2017
+9,Sing,Pop,Ed Sheeran,2014
+10,Dive,Pop,Ed Sheeran,2017
+11,Killshot,Rap,Eminem,2019
+12,Rap God,Rap,Eminem,2014
+13,Venom,Rap,Eminem,2019
+14,The Monster,Rap,Eminem,2014
+15,Who am I ,Rap,Eminem,2019
+16,Everything,Rap,Eminem,2019
+17,Needed Me,R&B,Rihanna,2015
+18,Work,R&B,Rihanna,2015
+19,Kiss is Better,R&B,Rihanna,2015
+20,Private Loving,R&B,Rihanna,2019
+21,One More Night,Rock,Linkin Park,2017
+22,Heavy,Rock,Linkin Park,2017
+23,Battele Symphony,Rock,Linkin Park,2017
+24,Burn it Down,Rock,Linkin Park,2014
+25,test,test,test,test

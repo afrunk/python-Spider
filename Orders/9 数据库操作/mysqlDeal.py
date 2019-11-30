@@ -39,8 +39,28 @@ def selectData():
     except:
         pass
 
+def updateData():
+    try:
+        update_sql = """UPDATE data set uptime ='2019-11-19' where studentname ='许婉雪' union UPDATE data set uptime ='2019-11-19' where studentname ='王智尧' """
+        cursor.execute(update_sql)
+        db.commit()
+    except:
+        print("出错了")
+
+def deleteData():
+    try:
+        delete_sql = """delete from data where studentname = 'test' """
+        cursor.execute(delete_sql)
+        db.commit()
+    except:
+        print("出错了")
+
 if __name__ == '__main__':
     # 插入数据
     inputData()
-    # 查询数据
+    # # 查询数据
     selectData()
+    # 修改数据
+    # updateData()
+    # 删除数据
+    # deleteData()

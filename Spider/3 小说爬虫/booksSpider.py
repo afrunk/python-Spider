@@ -1,6 +1,6 @@
-# 引入两个库 
-# requests 库是请求
-# beautifulsoup 是分析html结构的库
+# 引入两个库
+# # requests 库是请求
+# # beautifulsoup 是分析html结构的库
 import requests
 from bs4 import BeautifulSoup
 # 请求头部 用于网站验证你的请求是否合理 再requests.get方法中使用
@@ -12,7 +12,7 @@ headers ={
     'Referer':'http://www.jianlaixiaoshuo.com/'
 }
 # 目标网站链接
-url='http://www.jianlaixiaoshuo.com/book/695.html'
+url='http://www.jianlaixiaoshuo.com/book/694.html'
 # 使用requests 库请求 html，将请求到的html存入到我们定义的变量html中 这里使用到了上面的头部
 html = requests.get(url,headers=headers)
 # 如果 reqests.get().status_code ==200 的话就是请求成功了
@@ -27,7 +27,7 @@ if html.status_code == 200:
     print(content)
     # 打开jianlai.txt文本，w是写入的意思，encoding='utf-8'和上面一样进行字符转换成我们可以正常浏览的字符格式 
     # as f 是将打开的文本用f来代替
-    with open('jianlai.txt','w',encoding='utf-8') as f:
+    with open('jianlai2.txt','w+',encoding='utf-8') as f:
         # 将content写入jianlai.txt
         f.write(content)
         # 关闭文本
