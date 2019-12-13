@@ -9,8 +9,6 @@ date:2019-10-3
 
 总数 15900 = 15 * 1060
 
-'''
-
 # https://www.finra.org/rules-guidance/oversight-enforcement/finra-disciplinary-actions?search=&firms=&individuals=&field_fda_case_id_txt=&field_core_official_dt%5Bmin%5D=1/1/2007&field_core_official_dt%5Bmax%5D=&field_fda_document_type_tax=All&page=1058  1059
 
 # https://www.finra.org/rules-guidance/oversight-enforcement/finra-disciplinary-actions?search=&firms=&individuals=&field_fda_case_id_txt=&field_core_official_dt%5Bmin%5D=1/1/2007&field_core_official_dt%5Bmax%5D=&field_fda_document_type_tax=All&page=1056 1057
@@ -19,19 +17,23 @@ date:2019-10-3
 
 # https://www.finra.org/rules-guidance/oversight-enforcement/finra-disciplinary-actions?search=&firms=&individuals=&field_fda_case_id_txt=&field_core_official_dt%5Bmin%5D=1/1/2007&field_core_official_dt%5Bmax%5D=&field_fda_document_type_tax=All&page=1059
 
+
+'''
+
+
 import requests
 from bs4 import BeautifulSoup
 import time
 import random # 随机函数
-from multiprocessing import Pool # 多线程
-import pymysql
-db = pymysql.connect(host='127.0.0.1',
-                     port=3306,
-                     user='root',
-                     password='password',
-                     db='world',
-                     charset='utf8')
-cursor = db.cursor()
+# from multiprocessing import Pool # 多线程
+# import pymysql
+# db = pymysql.connect(host='127.0.0.1',
+#                      port=3306,
+#                      user='root',
+#                      password='password',
+#                      db='world',
+#                      charset='utf8')
+# cursor = db.cursor()
 
 
 def get_html(url):
@@ -91,28 +93,28 @@ def get_html(url):
                 print(ActionDate+'\n')
 
                 # 将数据插入数据库 避免重复打开 excle带来的时间等待
-                try:
-                    sql_2 = """
-                            INSERT IGNORE INTO finar (a_href,CaseID,CaseSummary,DocumentType,label_num,Individuals,ActionDate)VALUES('{}','{}','{}','{}','{}','{}','{}' )
-                                        """ \
-                        .format(
-                        pdf_href, # 报错 去掉括号 网站的解决是如此 实践之后确实没有问题
-                        pymysql.escape_string(CaseID),
-                        pymysql.escape_string(CaseSummary),
-                        pymysql.escape_string(DocumentType),
-                        label_num,
-                        pymysql.escape_string(Individuals),
-                        pymysql.escape_string(ActionDate),
-                    )
-                    print(sql_2)
-                    cursor.execute(sql_2)  # 执行命令
-                    db.commit()  # 提交事务
-                # 如果提交失败 依旧写入到log日志中
-                except:
-                    # 如果报错直接跳出当前循环
-                    # break
-                    pass
-                # break # 测试用语 只输出第一个 tr里的tds
+                # try:
+                #     sql_2 = """
+                #             INSERT IGNORE INTO finar (a_href,CaseID,CaseSummary,DocumentType,label_num,Individuals,ActionDate)VALUES('{}','{}','{}','{}','{}','{}','{}' )
+                #                         """ \
+                #         .format(
+                #         pdf_href, # 报错 去掉括号 网站的解决是如此 实践之后确实没有问题
+                #         pymysql.escape_string(CaseID),
+                #         pymysql.escape_string(CaseSummary),
+                #         pymysql.escape_string(DocumentType),
+                #         label_num,
+                #         pymysql.escape_string(Individuals),
+                #         pymysql.escape_string(ActionDate),
+                #     )
+                #     print(sql_2)
+                #     cursor.execute(sql_2)  # 执行命令
+                #     db.commit()  # 提交事务
+                # # 如果提交失败 依旧写入到log日志中
+                # except:
+                #     # 如果报错直接跳出当前循环
+                #     # break
+                #     pass
+                # # break # 测试用语 只输出第一个 tr里的tds
 
         # 随机睡眠1-5s
         time.sleep(random.randint(1,5))

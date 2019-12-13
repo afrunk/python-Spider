@@ -2,9 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Orders/1 操作txt和csv文件/NewData.csv" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/Orders/10 读取excle统计词频/NewData.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Orders/10 读取excle统计词频/test.csv" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/Orders/10 读取excle统计词频/test1.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/10 淘宝销量爬虫/NewData.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/13 中国地震网/data.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/17 作家信息爬虫/Data.csv" charset="GBK" />
@@ -13,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/Spider/23 caec/NewData.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/27 广东律师信息/广州.csv" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/32 软科大学排名/Data.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Spider/41 巨潮爬虫/test.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Spider/43 百度文库/礼赞新中国 奋进新时代.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Spider/8 苹果官网二手平板监测/log.txt" charset="GBK" />
   </component>
 </project>

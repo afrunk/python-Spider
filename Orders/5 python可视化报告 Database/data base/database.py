@@ -57,7 +57,7 @@ def input_songname_author_year_types():
             # print(inputtext.lower())
             # print(data.lower())
             if inputtext.lower() in  data.lower():
-                print("找到了 ：",i)
+                print(i)
                 flag =1
 
     if flag ==0:
